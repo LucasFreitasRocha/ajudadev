@@ -24,6 +24,7 @@ repositories {
 }
 
 dependencies {
+	implementation("org.apache.commons:commons-lang3")
 	implementation("org.springframework:spring-web")
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 	compileOnly("org.projectlombok:lombok")
