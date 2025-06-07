@@ -1,5 +1,6 @@
 package dev.ajuda.monolito.core.validator;
 
+import dev.ajuda.monolito.core.domain.UserDomain;
 import dev.ajuda.monolito.core.exception.service.HandlerErrorService;
 import dev.ajuda.monolito.entrypoint.api.dto.in.RegisterInDto;
 import org.junit.jupiter.api.DisplayName;
@@ -26,7 +27,7 @@ class RegisterValidatorTest {
     @Test
     @DisplayName("Should fall  validation errors - empty name, password and invalid email")
     void shouldFallEmptyAndInvalid() {
-        var register = RegisterInDto.builder()
+        var register = UserDomain.builder()
                 .name("")
                 .email("invalid-email")
                 .password("")
@@ -42,7 +43,7 @@ class RegisterValidatorTest {
     @Test
     @DisplayName("should fall validation errors - null name and password")
     void shouldFallNullParameters() {
-        var register = RegisterInDto.builder()
+        var register = UserDomain.builder()
                 .build();
         registerValidator.validate(register);
         verify(handlerErrorService).init();
@@ -55,7 +56,7 @@ class RegisterValidatorTest {
     @Test
     @DisplayName("Should fall validation errors - empty email")
     void shouldFallEmptyEmail() {
-        var register = RegisterInDto.builder()
+        var register = UserDomain.builder()
                 .name("Valid Name")
                 .email("")
                 .password("ValidPassword123")
@@ -69,7 +70,7 @@ class RegisterValidatorTest {
     @Test
     @DisplayName("Should pass validation")
     void shouldPassValidation() {
-        var register = RegisterInDto.builder()
+        var register = UserDomain.builder()
                 .name("Valid Name")
                 .email("teste@email.com")
                 .password("ValidPassword123")

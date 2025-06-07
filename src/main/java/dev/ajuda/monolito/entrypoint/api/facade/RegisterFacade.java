@@ -12,6 +12,6 @@ public class RegisterFacade {
     private final RegisterGateway registerGateway;
 
     public RegisterOutDto register(RegisterInDto register) {
-        return registerGateway.register(register);
+        return RegisterOutDto.fromDomain(registerGateway.register(register.toDomain()));
     }
 }

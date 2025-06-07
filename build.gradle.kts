@@ -24,6 +24,9 @@ repositories {
 }
 
 dependencies {
+	implementation("org.springframework.boot:spring-boot-starter-web")
+	implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.6.0")
+	implementation("org.springframework.security:spring-security-crypto")
 	implementation("org.apache.commons:commons-lang3")
 	implementation("org.springframework:spring-web")
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
