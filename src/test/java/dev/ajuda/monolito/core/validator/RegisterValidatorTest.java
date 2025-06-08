@@ -1,7 +1,9 @@
 package dev.ajuda.monolito.core.validator;
 
 import dev.ajuda.monolito.core.domain.UserDomain;
+import dev.ajuda.monolito.core.exception.model.FieldsMessageError;
 import dev.ajuda.monolito.core.exception.service.HandlerErrorService;
+import dev.ajuda.monolito.core.gateway.out.UserGateway;
 import dev.ajuda.monolito.entrypoint.api.dto.in.RegisterInDto;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -11,8 +13,7 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.never;
-import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.*;
 
 
 @ExtendWith(MockitoExtension.class)
@@ -21,6 +22,8 @@ class RegisterValidatorTest {
 
     @Mock
     HandlerErrorService handlerErrorService;
+    @Mock
+    UserGateway userGateway;
     @InjectMocks
     private RegisterValidator registerValidator;
 
@@ -34,9 +37,9 @@ class RegisterValidatorTest {
                 .build();
         registerValidator.validate(register);
         verify(handlerErrorService).init();
-        verify(handlerErrorService).addFieldError("name", "Name cannot be empty");
-        verify(handlerErrorService).addFieldError("password", "Password cannot be empty");
-        verify(handlerErrorService).addFieldError("email", "Email is not valid");
+        verify(handlerErrorService).addFieldError(FieldsMessageError.NAME_EMPTY);
+        verify(handlerErrorService).addFieldError(FieldsMessageError.PASSWORD_EMPTY);
+        verify(handlerErrorService).addFieldError(FieldsMessageError.EMAIL_INVALID);
         verify(handlerErrorService).handle();
     }
 
@@ -47,9 +50,9 @@ class RegisterValidatorTest {
                 .build();
         registerValidator.validate(register);
         verify(handlerErrorService).init();
-        verify(handlerErrorService).addFieldError("name", "Name cannot be empty");
-        verify(handlerErrorService).addFieldError("password", "Password cannot be empty");
-        verify(handlerErrorService).addFieldError("email", "Email is not valid");
+        verify(handlerErrorService).addFieldError(FieldsMessageError.NAME_EMPTY);
+        verify(handlerErrorService).addFieldError(FieldsMessageError.PASSWORD_EMPTY);
+        verify(handlerErrorService).addFieldError(FieldsMessageError.EMAIL_INVALID);
         verify(handlerErrorService).handle();
     }
 
@@ -63,7 +66,7 @@ class RegisterValidatorTest {
                 .build();
         registerValidator.validate(register);
         verify(handlerErrorService).init();
-        verify(handlerErrorService).addFieldError("email", "Email cannot be empty");
+        verify(handlerErrorService).addFieldError(FieldsMessageError.EMAIL_EMPTY);
         verify(handlerErrorService).handle();
     }
 
@@ -77,7 +80,7 @@ class RegisterValidatorTest {
                 .build();
         registerValidator.validate(register);
         verify(handlerErrorService).init();
-        verify(handlerErrorService, never()).addFieldError(any(),any());
+        verify(handlerErrorService, never()).addFieldError(any());
         verify(handlerErrorService).handle();
     }
 
