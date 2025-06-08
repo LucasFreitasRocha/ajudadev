@@ -1,4 +1,4 @@
-package dev.ajuda.monolito.entrypoint.api.dto.out;
+package dev.ajuda.monolito.entrypoint.api.controller.user.dto.out;
 
 import dev.ajuda.monolito.core.domain.TypeUser;
 import dev.ajuda.monolito.core.domain.UserDomain;
