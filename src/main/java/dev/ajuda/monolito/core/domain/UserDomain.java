@@ -1,8 +1,10 @@
 package dev.ajuda.monolito.core.domain;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
 
-import java.math.BigInteger;
 import java.util.List;
 
 @Getter
@@ -10,7 +12,7 @@ import java.util.List;
 @AllArgsConstructor
 @Builder
 public class UserDomain {
-    private Long id;
+    private String id;
     private String name;
     private String email;
     private String password;

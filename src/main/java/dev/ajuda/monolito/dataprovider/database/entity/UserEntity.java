@@ -2,6 +2,7 @@ package dev.ajuda.monolito.dataprovider.database.entity;
 
 import dev.ajuda.monolito.core.domain.TypeUser;
 import dev.ajuda.monolito.core.domain.UserDomain;
+import dev.ajuda.monolito.core.util.uuid.GeneratedUuidV7;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,6 +10,8 @@ import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 
 import java.util.List;
+import java.util.Objects;
+import java.util.UUID;
 
 @Entity
 @Builder
@@ -17,8 +20,8 @@ import java.util.List;
 @Table(name = "users")
 public class UserEntity {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    @GeneratedUuidV7
+    private UUID id;
 
     @Column(nullable = false)
     private String name;
@@ -36,7 +39,7 @@ public class UserEntity {
 
     public UserDomain toDomain() {
         return UserDomain.builder()
-                .id(id)
+                .id(id.toString())
                 .name(name)
                 .email(email)
                 .password(password)
@@ -45,7 +48,7 @@ public class UserEntity {
     }
     public static UserEntity fromDomain(UserDomain userDomain) {
         return UserEntity.builder()
-                .id(userDomain.getId())
+                .id(Objects.nonNull(userDomain.getId()) ?UUID.fromString(userDomain.getId()) : null)
                 .name(userDomain.getName())
                 .email(userDomain.getEmail())
                 .password(userDomain.getPassword())

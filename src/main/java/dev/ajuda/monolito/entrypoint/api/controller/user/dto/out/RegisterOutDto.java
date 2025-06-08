@@ -8,7 +8,7 @@ import java.util.List;
 
 @Builder
 public record RegisterOutDto(
-                            Long id,
+                            String id,
                             String name,
                             String email,
                             List<TypeUser> typeUsers) {
