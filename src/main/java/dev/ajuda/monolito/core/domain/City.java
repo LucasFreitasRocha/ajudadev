@@ -6,6 +6,7 @@ import lombok.Getter;
 @Builder
 @Getter
 public class City {
+    private final Long id;
     private final String name;
     private final StatesBrazil state;
 

@@ -13,13 +13,12 @@ import org.apache.commons.lang3.StringUtils;
 
 @Component
 @RequiredArgsConstructor
-public class RegisterValidator {
+public class RegisterUseValidator {
     private final HandlerErrorService handlerErrorService;
-    private final UserGateway userGateway;
     public void validate(UserDomain register) {
         handlerErrorService.init();
-        if (StringUtils.isEmpty(register.getName())) {
-            handlerErrorService.addFieldError(FieldsMessageError.NAME_EMPTY);
+        if (!NameValidator.isValid(register.getName(), false)) {
+            handlerErrorService.addFieldError(FieldsMessageError.NAME_INVALID);
         }
         if (StringUtils.isEmpty(register.getPassword())) {
             handlerErrorService.addFieldError(FieldsMessageError.PASSWORD_EMPTY);

@@ -1,12 +1,12 @@
 create table city (
 	 id SERIAL PRIMARY KEY,
-    nome VARCHAR(150) NOT NULL,
+    name VARCHAR(150) NOT NULL,
     state varchar(2) not null
 );
 
 CREATE INDEX idx_city_state ON city(state);
 
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Acrelândia','AC'),
 	 ('Assis Brasil','AC'),
 	 ('Brasiléia','AC'),
@@ -17,7 +17,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Feijó','AC'),
 	 ('Jordão','AC'),
 	 ('Mâncio Lima','AC');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Manoel Urbano','AC'),
 	 ('Marechal Thaumaturgo','AC'),
 	 ('Plácido de Castro','AC'),
@@ -28,7 +28,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Santa Rosa do Purus','AC'),
 	 ('Sena Madureira','AC'),
 	 ('Senador Guiomard','AC');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Tarauacá','AC'),
 	 ('Xapuri','AC'),
 	 ('Água Branca','AL'),
@@ -39,7 +39,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Barra de São Miguel','AL'),
 	 ('Batalha','AL'),
 	 ('Belém','AL');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Belo Monte','AL'),
 	 ('Boca da Mata','AL'),
 	 ('Branquinha','AL'),
@@ -50,7 +50,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Campo Grande','AL'),
 	 ('Canapi','AL'),
 	 ('Capela','AL');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Carneiros','AL'),
 	 ('Chã Preta','AL'),
 	 ('Coité do Nóia','AL'),
@@ -61,7 +61,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Delmiro Gouveia','AL'),
 	 ('Dois Riachos','AL'),
 	 ('Estrela de Alagoas','AL');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Feira Grande','AL'),
 	 ('Feliz Deserto','AL'),
 	 ('Flexeiras','AL'),
@@ -72,7 +72,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Inhapi','AL'),
 	 ('Jacaré dos Homens','AL'),
 	 ('Jacuípe','AL');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Japaratinga','AL'),
 	 ('Jaramataia','AL'),
 	 ('Jequiá da Praia','AL'),
@@ -83,7 +83,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Limoeiro de Anadia','AL'),
 	 ('Maceió','AL'),
 	 ('Major Isidoro','AL');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Mar Vermelho','AL'),
 	 ('Maragogi','AL'),
 	 ('Maravilha','AL'),
@@ -94,7 +94,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Messias','AL'),
 	 ('Minador do Negrão','AL'),
 	 ('Monteirópolis','AL');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Murici','AL'),
 	 ('Novo Lino','AL'),
 	 ('Olho d''Água das Flores','AL'),
@@ -105,7 +105,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Palestina','AL'),
 	 ('Palmeira dos Índios','AL'),
 	 ('Pão de Açúcar','AL');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Pariconha','AL'),
 	 ('Paripueira','AL'),
 	 ('Passo de Camaragibe','AL'),
@@ -116,7 +116,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Pindoba','AL'),
 	 ('Piranhas','AL'),
 	 ('Poço das Trincheiras','AL');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Porto Calvo','AL'),
 	 ('Porto de Pedras','AL'),
 	 ('Porto Real do Colégio','AL'),
@@ -127,7 +127,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Santana do Ipanema','AL'),
 	 ('Santana do Mundaú','AL'),
 	 ('São Brás','AL');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('São José da Laje','AL'),
 	 ('São José da Tapera','AL'),
 	 ('São Luís do Quitunde','AL'),
@@ -138,7 +138,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Senador Rui Palmeira','AL'),
 	 ('Tanque d''Arca','AL'),
 	 ('Taquarana','AL');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Teotônio Vilela','AL'),
 	 ('Traipu','AL'),
 	 ('União dos Palmares','AL'),
@@ -149,7 +149,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Anori','AM'),
 	 ('Apuí','AM'),
 	 ('Atalaia do Norte','AM');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Autazes','AM'),
 	 ('Barcelos','AM'),
 	 ('Barreirinha','AM'),
@@ -160,7 +160,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Borba','AM'),
 	 ('Caapiranga','AM'),
 	 ('Canutama','AM');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Carauari','AM'),
 	 ('Careiro','AM'),
 	 ('Careiro da Várzea','AM'),
@@ -171,7 +171,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Fonte Boa','AM'),
 	 ('Guajará','AM'),
 	 ('Humaitá','AM');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Ipixuna','AM'),
 	 ('Iranduba','AM'),
 	 ('Itacoatiara','AM'),
@@ -182,7 +182,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Jutaí','AM'),
 	 ('Lábrea','AM'),
 	 ('Manacapuru','AM');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Manaquiri','AM'),
 	 ('Manaus','AM'),
 	 ('Manicoré','AM'),
@@ -193,7 +193,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Novo Airão','AM'),
 	 ('Novo Aripuanã','AM'),
 	 ('Parintins','AM');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Pauini','AM'),
 	 ('Presidente Figueiredo','AM'),
 	 ('Rio Preto da Eva','AM'),
@@ -204,7 +204,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('São Sebastião do Uatumã','AM'),
 	 ('Silves','AM'),
 	 ('Tabatinga','AM');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Tapauá','AM'),
 	 ('Tefé','AM'),
 	 ('Tonantins','AM'),
@@ -215,7 +215,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Calçoene','AP'),
 	 ('Cutias','AP'),
 	 ('Ferreira Gomes','AP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Itaubal','AP'),
 	 ('Laranjal do Jari','AP'),
 	 ('Macapá','AP'),
@@ -226,7 +226,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Pracuúba','AP'),
 	 ('Santana','AP'),
 	 ('Serra do Navio','AP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Tartarugalzinho','AP'),
 	 ('Vitória do Jari','AP'),
 	 ('Abaíra','BA'),
@@ -237,7 +237,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Aiquara','BA'),
 	 ('Alagoinhas','BA'),
 	 ('Alcobaça','BA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Almadina','BA'),
 	 ('Amargosa','BA'),
 	 ('Amélia Rodrigues','BA'),
@@ -248,7 +248,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Angical','BA'),
 	 ('Anguera','BA'),
 	 ('Antas','BA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Antônio Cardoso','BA'),
 	 ('Antônio Gonçalves','BA'),
 	 ('Aporá','BA'),
@@ -259,7 +259,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Aramari','BA'),
 	 ('Arataca','BA'),
 	 ('Aratuípe','BA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Aurelino Leal','BA'),
 	 ('Baianópolis','BA'),
 	 ('Baixa Grande','BA'),
@@ -270,7 +270,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Barra do Mendes','BA'),
 	 ('Barra do Rocha','BA'),
 	 ('Barreiras','BA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Barro Alto','BA'),
 	 ('Barrocas','BA'),
 	 ('Barro Preto','BA'),
@@ -281,7 +281,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Boa Vista do Tupim','BA'),
 	 ('Bom Jesus da Lapa','BA'),
 	 ('Bom Jesus da Serra','BA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Boninal','BA'),
 	 ('Bonito','BA'),
 	 ('Boquira','BA'),
@@ -292,7 +292,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Brumado','BA'),
 	 ('Buerarema','BA'),
 	 ('Buritirama','BA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Caatiba','BA'),
 	 ('Cabaceiras do Paraguaçu','BA'),
 	 ('Cachoeira','BA'),
@@ -303,7 +303,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Cafarnaum','BA'),
 	 ('Cairu','BA'),
 	 ('Caldeirão Grande','BA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Camacan','BA'),
 	 ('Camaçari','BA'),
 	 ('Camamu','BA'),
@@ -314,7 +314,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Canavieiras','BA'),
 	 ('Candeal','BA'),
 	 ('Candeias','BA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Candiba','BA'),
 	 ('Cândido Sales','BA'),
 	 ('Cansanção','BA'),
@@ -325,7 +325,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Caravelas','BA'),
 	 ('Cardeal da Silva','BA'),
 	 ('Carinhanha','BA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Casa Nova','BA'),
 	 ('Castro Alves','BA'),
 	 ('Catolândia','BA'),
@@ -336,7 +336,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Cícero Dantas','BA'),
 	 ('Cipó','BA'),
 	 ('Coaraci','BA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Cocos','BA'),
 	 ('Conceição da Feira','BA'),
 	 ('Conceição do Almeida','BA'),
@@ -347,7 +347,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Contendas do Sincorá','BA'),
 	 ('Coração de Maria','BA'),
 	 ('Cordeiros','BA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Coribe','BA'),
 	 ('Coronel João Sá','BA'),
 	 ('Correntina','BA'),
@@ -358,7 +358,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Cruz das Almas','BA'),
 	 ('Curaçá','BA'),
 	 ('Dário Meira','BA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Dias d''Ávila','BA'),
 	 ('Dom Basílio','BA'),
 	 ('Dom Macedo Costa','BA'),
@@ -369,7 +369,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Esplanada','BA'),
 	 ('Euclides da Cunha','BA'),
 	 ('Eunápolis','BA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Fátima','BA'),
 	 ('Feira da Mata','BA'),
 	 ('Feira de Santana','BA'),
@@ -380,7 +380,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Gandu','BA'),
 	 ('Gavião','BA'),
 	 ('Gentio do Ouro','BA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Glória','BA'),
 	 ('Gongogi','BA'),
 	 ('Governador Mangabeira','BA'),
@@ -391,7 +391,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Iaçu','BA'),
 	 ('Ibiassucê','BA'),
 	 ('Ibicaraí','BA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Ibicoara','BA'),
 	 ('Ibicuí','BA'),
 	 ('Ibipeba','BA'),
@@ -402,7 +402,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Ibirataia','BA'),
 	 ('Ibitiara','BA'),
 	 ('Ibititá','BA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Ibotirama','BA'),
 	 ('Ichu','BA'),
 	 ('Igaporã','BA'),
@@ -413,7 +413,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Ipecaetá','BA'),
 	 ('Ipiaú','BA'),
 	 ('Ipirá','BA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Ipupiara','BA'),
 	 ('Irajuba','BA'),
 	 ('Iramaia','BA'),
@@ -424,7 +424,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Itaberaba','BA'),
 	 ('Itabuna','BA'),
 	 ('Itacaré','BA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Itaeté','BA'),
 	 ('Itagi','BA'),
 	 ('Itagibá','BA'),
@@ -435,7 +435,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Itamaraju','BA'),
 	 ('Itamari','BA'),
 	 ('Itambé','BA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Itanagra','BA'),
 	 ('Itanhém','BA'),
 	 ('Itaparica','BA'),
@@ -446,7 +446,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Itapitanga','BA'),
 	 ('Itaquara','BA'),
 	 ('Itarantim','BA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Itatim','BA'),
 	 ('Itiruçu','BA'),
 	 ('Itiúba','BA'),
@@ -457,7 +457,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Jaborandi','BA'),
 	 ('Jacaraci','BA'),
 	 ('Jacobina','BA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Jaguaquara','BA'),
 	 ('Jaguarari','BA'),
 	 ('Jaguaripe','BA'),
@@ -468,7 +468,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Jitaúna','BA'),
 	 ('João Dourado','BA'),
 	 ('Juazeiro','BA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Jucuruçu','BA'),
 	 ('Jussara','BA'),
 	 ('Jussari','BA'),
@@ -479,7 +479,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Lajedão','BA'),
 	 ('Lajedinho','BA'),
 	 ('Lajedo do Tabocal','BA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Lamarão','BA'),
 	 ('Lapão','BA'),
 	 ('Lauro de Freitas','BA'),
@@ -490,7 +490,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Macajuba','BA'),
 	 ('Macarani','BA'),
 	 ('Macaúbas','BA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Macururé','BA'),
 	 ('Madre de Deus','BA'),
 	 ('Maetinga','BA'),
@@ -501,7 +501,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Manoel Vitorino','BA'),
 	 ('Mansidão','BA'),
 	 ('Maracás','BA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Maragogipe','BA'),
 	 ('Maraú','BA'),
 	 ('Marcionílio Souza','BA'),
@@ -512,7 +512,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Miguel Calmon','BA'),
 	 ('Milagres','BA'),
 	 ('Mirangaba','BA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Mirante','BA'),
 	 ('Monte Santo','BA'),
 	 ('Morpará','BA'),
@@ -523,7 +523,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Mulungu do Morro','BA'),
 	 ('Mundo Novo','BA'),
 	 ('Muniz Ferreira','BA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Muquém de São Francisco','BA'),
 	 ('Muritiba','BA'),
 	 ('Mutuípe','BA'),
@@ -534,7 +534,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Nova Fátima','BA'),
 	 ('Nova Ibiá','BA'),
 	 ('Nova Itarana','BA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Nova Redenção','BA'),
 	 ('Nova Soure','BA'),
 	 ('Nova Viçosa','BA'),
@@ -545,7 +545,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Ouriçangas','BA'),
 	 ('Ourolândia','BA'),
 	 ('Palmas de Monte Alto','BA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Palmeiras','BA'),
 	 ('Paramirim','BA'),
 	 ('Paratinga','BA'),
@@ -556,7 +556,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Pedrão','BA'),
 	 ('Pedro Alexandre','BA'),
 	 ('Piatã','BA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Pilão Arcado','BA'),
 	 ('Pindaí','BA'),
 	 ('Pindobaçu','BA'),
@@ -567,7 +567,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Planaltino','BA'),
 	 ('Planalto','BA'),
 	 ('Poções','BA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Pojuca','BA'),
 	 ('Ponto Novo','BA'),
 	 ('Porto Seguro','BA'),
@@ -578,7 +578,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Presidente Tancredo Neves','BA'),
 	 ('Queimadas','BA'),
 	 ('Quijingue','BA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Quixabeira','BA'),
 	 ('Rafael Jambeiro','BA'),
 	 ('Remanso','BA'),
@@ -589,7 +589,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Ribeira do Amparo','BA'),
 	 ('Ribeira do Pombal','BA'),
 	 ('Ribeirão do Largo','BA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Rio de Contas','BA'),
 	 ('Rio do Antônio','BA'),
 	 ('Rio do Pires','BA'),
@@ -600,7 +600,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Salvador','BA'),
 	 ('Santa Bárbara','BA'),
 	 ('Santa Brígida','BA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Santa Cruz Cabrália','BA'),
 	 ('Santa Cruz da Vitória','BA'),
 	 ('Santa Inês','BA'),
@@ -611,7 +611,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Santaluz','BA'),
 	 ('Santana','BA'),
 	 ('Santanópolis','BA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Santo Amaro','BA'),
 	 ('Santo Antônio de Jesus','BA'),
 	 ('Santo Estêvão','BA'),
@@ -622,7 +622,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('São Félix do Coribe','BA'),
 	 ('São Francisco do Conde','BA'),
 	 ('São Gabriel','BA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('São Gonçalo dos Campos','BA'),
 	 ('São José da Vitória','BA'),
 	 ('São José do Jacuípe','BA'),
@@ -633,7 +633,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Saubara','BA'),
 	 ('Saúde','BA'),
 	 ('Seabra','BA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Sebastião Laranjeiras','BA'),
 	 ('Senhor do Bonfim','BA'),
 	 ('Sento Sé','BA'),
@@ -644,7 +644,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Serrolândia','BA'),
 	 ('Simões Filho','BA'),
 	 ('Sítio do Mato','BA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Sítio do Quinto','BA'),
 	 ('Sobradinho','BA'),
 	 ('Souto Soares','BA'),
@@ -655,7 +655,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Taperoá','BA'),
 	 ('Tapiramutá','BA'),
 	 ('Teixeira de Freitas','BA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Teodoro Sampaio','BA'),
 	 ('Teofilândia','BA'),
 	 ('Teolândia','BA'),
@@ -666,7 +666,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Ubaíra','BA'),
 	 ('Ubaitaba','BA'),
 	 ('Ubatã','BA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Uibaí','BA'),
 	 ('Umburanas','BA'),
 	 ('Una','BA'),
@@ -677,7 +677,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Valente','BA'),
 	 ('Várzea da Roça','BA'),
 	 ('Várzea do Poço','BA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Várzea Nova','BA'),
 	 ('Varzedo','BA'),
 	 ('Vera Cruz','BA'),
@@ -688,7 +688,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Wenceslau Guimarães','BA'),
 	 ('Xique-Xique','BA'),
 	 ('Abaiara','CE');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Acarape','CE'),
 	 ('Acaraú','CE'),
 	 ('Acopiara','CE'),
@@ -699,7 +699,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Amontada','CE'),
 	 ('Antonina do Norte','CE'),
 	 ('Apuiarés','CE');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Aquiraz','CE'),
 	 ('Aracati','CE'),
 	 ('Aracoiaba','CE'),
@@ -710,7 +710,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Assaré','CE'),
 	 ('Aurora','CE'),
 	 ('Baixio','CE');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Banabuiú','CE'),
 	 ('Barbalha','CE'),
 	 ('Barreira','CE'),
@@ -721,7 +721,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Bela Cruz','CE'),
 	 ('Boa Viagem','CE'),
 	 ('Brejo Santo','CE');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Camocim','CE'),
 	 ('Campos Sales','CE'),
 	 ('Canindé','CE'),
@@ -732,7 +732,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Cariús','CE'),
 	 ('Carnaubal','CE'),
 	 ('Cascavel','CE');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Catarina','CE'),
 	 ('Catunda','CE'),
 	 ('Caucaia','CE'),
@@ -743,7 +743,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Coreaú','CE'),
 	 ('Crateús','CE'),
 	 ('Crato','CE');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Croatá','CE'),
 	 ('Cruz','CE'),
 	 ('Deputado Irapuan Pinheiro','CE'),
@@ -754,7 +754,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Fortaleza','CE'),
 	 ('Fortim','CE'),
 	 ('Frecheirinha','CE');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('General Sampaio','CE'),
 	 ('Graça','CE'),
 	 ('Granja','CE'),
@@ -765,7 +765,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Guaramiranga','CE'),
 	 ('Hidrolândia','CE'),
 	 ('Horizonte','CE');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Ibaretama','CE'),
 	 ('Ibiapina','CE'),
 	 ('Ibicuitinga','CE'),
@@ -776,7 +776,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Ipaporanga','CE'),
 	 ('Ipaumirim','CE'),
 	 ('Ipu','CE');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Ipueiras','CE'),
 	 ('Iracema','CE'),
 	 ('Irauçuba','CE'),
@@ -787,7 +787,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Itapiúna','CE'),
 	 ('Itarema','CE'),
 	 ('Itatira','CE');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Jaguaretama','CE'),
 	 ('Jaguaribara','CE'),
 	 ('Jaguaribe','CE'),
@@ -798,7 +798,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Juazeiro do Norte','CE'),
 	 ('Jucás','CE'),
 	 ('Lavras da Mangabeira','CE');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Limoeiro do Norte','CE'),
 	 ('Madalena','CE'),
 	 ('Maracanaú','CE'),
@@ -809,7 +809,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Mauriti','CE'),
 	 ('Meruoca','CE'),
 	 ('Milagres','CE');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Milhã','CE'),
 	 ('Miraíma','CE'),
 	 ('Missão Velha','CE'),
@@ -820,7 +820,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Morrinhos','CE'),
 	 ('Mucambo','CE'),
 	 ('Mulungu','CE');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Nova Olinda','CE'),
 	 ('Nova Russas','CE'),
 	 ('Novo Oriente','CE'),
@@ -831,7 +831,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Pacoti','CE'),
 	 ('Pacujá','CE'),
 	 ('Palhano','CE');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Palmácia','CE'),
 	 ('Paracuru','CE'),
 	 ('Paraipaba','CE'),
@@ -842,7 +842,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Pentecoste','CE'),
 	 ('Pereiro','CE'),
 	 ('Pindoretama','CE');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Piquet Carneiro','CE'),
 	 ('Pires Ferreira','CE'),
 	 ('Poranga','CE'),
@@ -853,7 +853,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Quixadá','CE'),
 	 ('Quixelô','CE'),
 	 ('Quixeramobim','CE');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Quixeré','CE'),
 	 ('Redenção','CE'),
 	 ('Reriutaba','CE'),
@@ -864,7 +864,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Santana do Acaraú','CE'),
 	 ('Santana do Cariri','CE'),
 	 ('São Benedito','CE');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('São Gonçalo do Amarante','CE'),
 	 ('São João do Jaguaribe','CE'),
 	 ('São Luís do Curu','CE'),
@@ -875,7 +875,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Tabuleiro do Norte','CE'),
 	 ('Tamboril','CE'),
 	 ('Tarrafas','CE');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Tauá','CE'),
 	 ('Tejuçuoca','CE'),
 	 ('Tianguá','CE'),
@@ -886,7 +886,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Umirim','CE'),
 	 ('Uruburetama','CE'),
 	 ('Uruoca','CE');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Varjota','CE'),
 	 ('Várzea Alegre','CE'),
 	 ('Viçosa do Ceará','CE'),
@@ -897,7 +897,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Candangolândia','DF'),
 	 ('Ceilândia','DF'),
 	 ('Cruzeiro','DF');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Estrutural','DF'),
 	 ('Fercal','DF'),
 	 ('Gama','DF'),
@@ -908,7 +908,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Lago Sul','DF'),
 	 ('Núcleo Bandeirante','DF'),
 	 ('Octogonal','DF');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Paranoá','DF'),
 	 ('Park Way','DF'),
 	 ('Planaltina','DF'),
@@ -919,7 +919,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Riacho Fundo','DF'),
 	 ('Samambaia','DF'),
 	 ('Santa Maria','DF');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('São Sebastião','DF'),
 	 ('SIA','DF'),
 	 ('Sobradinho II','DF'),
@@ -930,7 +930,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Varjão','DF'),
 	 ('Vicente Pires','DF'),
 	 ('Afonso Cláudio','ES');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Água Doce do Norte','ES'),
 	 ('Águia Branca','ES'),
 	 ('Alegre','ES'),
@@ -941,7 +941,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Aracruz','ES'),
 	 ('Atilio Vivacqua','ES'),
 	 ('Baixo Guandu','ES');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Barra de São Francisco','ES'),
 	 ('Boa Esperança','ES'),
 	 ('Bom Jesus do Norte','ES'),
@@ -952,7 +952,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Colatina','ES'),
 	 ('Conceição da Barra','ES'),
 	 ('Conceição do Castelo','ES');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Divino de São Lourenço','ES'),
 	 ('Domingos Martins','ES'),
 	 ('Dores do Rio Preto','ES'),
@@ -963,7 +963,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Guarapari','ES'),
 	 ('Ibatiba','ES'),
 	 ('Ibiraçu','ES');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Ibitirama','ES'),
 	 ('Iconha','ES'),
 	 ('Irupi','ES'),
@@ -974,7 +974,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Jaguaré','ES'),
 	 ('Jerônimo Monteiro','ES'),
 	 ('João Neiva','ES');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Laranja da Terra','ES'),
 	 ('Linhares','ES'),
 	 ('Mantenópolis','ES'),
@@ -985,7 +985,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Montanha','ES'),
 	 ('Mucurici','ES'),
 	 ('Muniz Freire','ES');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Muqui','ES'),
 	 ('Nova Venécia','ES'),
 	 ('Pancas','ES'),
@@ -996,7 +996,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Presidente Kennedy','ES'),
 	 ('Rio Bananal','ES'),
 	 ('Rio Novo do Sul','ES');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Santa Leopoldina','ES'),
 	 ('Santa Maria de Jetibá','ES'),
 	 ('Santa Teresa','ES'),
@@ -1007,7 +1007,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('São Roque do Canaã','ES'),
 	 ('Serra','ES'),
 	 ('Sooretama','ES');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Vargem Alta','ES'),
 	 ('Venda Nova do Imigrante','ES'),
 	 ('Viana','ES'),
@@ -1018,7 +1018,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Abadia de Goiás','GO'),
 	 ('Abadiânia','GO'),
 	 ('Acreúna','GO');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Adelândia','GO'),
 	 ('Água Fria de Goiás','GO'),
 	 ('Água Limpa','GO'),
@@ -1029,7 +1029,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Alto Paraíso de Goiás','GO'),
 	 ('Alvorada do Norte','GO'),
 	 ('Amaralina','GO');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Americano do Brasil','GO'),
 	 ('Amorinópolis','GO'),
 	 ('Anápolis','GO'),
@@ -1040,7 +1040,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Aporé','GO'),
 	 ('Araçu','GO'),
 	 ('Aragarças','GO');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Aragoiânia','GO'),
 	 ('Araguapaz','GO'),
 	 ('Arenópolis','GO'),
@@ -1051,7 +1051,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Barro Alto','GO'),
 	 ('Bela Vista de Goiás','GO'),
 	 ('Bom Jardim de Goiás','GO');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Bom Jesus de Goiás','GO'),
 	 ('Bonfinópolis','GO'),
 	 ('Bonópolis','GO'),
@@ -1062,7 +1062,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Buritinópolis','GO'),
 	 ('Cabeceiras','GO'),
 	 ('Cachoeira Alta','GO');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Cachoeira de Goiás','GO'),
 	 ('Cachoeira Dourada','GO'),
 	 ('Caçu','GO'),
@@ -1073,7 +1073,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Campinaçu','GO'),
 	 ('Campinorte','GO'),
 	 ('Campo Alegre de Goiás','GO');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Campos Limpo de Goiás','GO'),
 	 ('Campos Belos','GO'),
 	 ('Campos Verdes','GO'),
@@ -1084,7 +1084,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Cavalcante','GO'),
 	 ('Ceres','GO'),
 	 ('Cezarina','GO');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Chapadão do Céu','GO'),
 	 ('Cidade Ocidental','GO'),
 	 ('Cocalzinho de Goiás','GO'),
@@ -1095,7 +1095,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Cristalina','GO'),
 	 ('Cristianópolis','GO'),
 	 ('Crixás','GO');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Cromínia','GO'),
 	 ('Cumari','GO'),
 	 ('Damianópolis','GO'),
@@ -1106,7 +1106,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Doverlândia','GO'),
 	 ('Edealina','GO'),
 	 ('Edéia','GO');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Estrela do Norte','GO'),
 	 ('Faina','GO'),
 	 ('Fazenda Nova','GO'),
@@ -1117,7 +1117,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Gameleira de Goiás','GO'),
 	 ('Goianápolis','GO'),
 	 ('Goiandira','GO');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Goianésia','GO'),
 	 ('Goiânia','GO'),
 	 ('Goianira','GO'),
@@ -1128,7 +1128,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Guaraíta','GO'),
 	 ('Guarani de Goiás','GO'),
 	 ('Guarinos','GO');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Heitoraí','GO'),
 	 ('Hidrolândia','GO'),
 	 ('Hidrolina','GO'),
@@ -1139,7 +1139,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Ipameri','GO'),
 	 ('Ipiranga de Goiás','GO'),
 	 ('Iporá','GO');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Israelândia','GO'),
 	 ('Itaberaí','GO'),
 	 ('Itaguari','GO'),
@@ -1150,7 +1150,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Itapuranga','GO'),
 	 ('Itarumã','GO'),
 	 ('Itauçu','GO');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Itumbiara','GO'),
 	 ('Ivolândia','GO'),
 	 ('Jandaia','GO'),
@@ -1161,7 +1161,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Joviânia','GO'),
 	 ('Jussara','GO'),
 	 ('Lagoa Santa','GO');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Leopoldo de Bulhões','GO'),
 	 ('Luziânia','GO'),
 	 ('Mairipotaba','GO'),
@@ -1172,7 +1172,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Maurilândia','GO'),
 	 ('Mimoso de Goiás','GO'),
 	 ('Minaçu','GO');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Mineiros','GO'),
 	 ('Moiporá','GO'),
 	 ('Monte Alegre de Goiás','GO'),
@@ -1183,7 +1183,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Morro Agudo de Goiás','GO'),
 	 ('Mossâmedes','GO'),
 	 ('Mozarlândia','GO');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Mundo Novo','GO'),
 	 ('Mutunópolis','GO'),
 	 ('Nazário','GO'),
@@ -1194,7 +1194,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Nova Crixás','GO'),
 	 ('Nova Glória','GO'),
 	 ('Nova Iguaçu de Goiás','GO');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Nova Roma','GO'),
 	 ('Nova Veneza','GO'),
 	 ('Novo Brasil','GO'),
@@ -1205,7 +1205,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Ouvidor','GO'),
 	 ('Padre Bernardo','GO'),
 	 ('Palestina de Goiás','GO');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Palmeiras de Goiás','GO'),
 	 ('Palmelo','GO'),
 	 ('Palminópolis','GO'),
@@ -1216,7 +1216,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Petrolina de Goiás','GO'),
 	 ('Pilar de Goiás','GO'),
 	 ('Piracanjuba','GO');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Piranhas','GO'),
 	 ('Pirenópolis','GO'),
 	 ('Pires do Rio','GO'),
@@ -1227,7 +1227,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Portelândia','GO'),
 	 ('Posse','GO'),
 	 ('Professor Jamil','GO');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Quirinópolis','GO'),
 	 ('Rialma','GO'),
 	 ('Rianápolis','GO'),
@@ -1238,7 +1238,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Santa Bárbara de Goiás','GO'),
 	 ('Santa Cruz de Goiás','GO'),
 	 ('Santa Fé de Goiás','GO');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Santa Helena de Goiás','GO'),
 	 ('Santa Isabel','GO'),
 	 ('Santa Rita do Araguaia','GO'),
@@ -1249,7 +1249,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Santo Antônio da Barra','GO'),
 	 ('Santo Antônio de Goiás','GO'),
 	 ('Santo Antônio do Descoberto','GO');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('São Domingos','GO'),
 	 ('São Francisco de Goiás','GO'),
 	 ('São João d''Aliança','GO'),
@@ -1260,7 +1260,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('São Miguel do Passa Quatro','GO'),
 	 ('São Patrício','GO'),
 	 ('São Simão','GO');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Senador Canedo','GO'),
 	 ('Serranópolis','GO'),
 	 ('Silvânia','GO'),
@@ -1271,7 +1271,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Terezópolis de Goiás','GO'),
 	 ('Três Ranchos','GO'),
 	 ('Trindade','GO');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Trombas','GO'),
 	 ('Turvânia','GO'),
 	 ('Turvelândia','GO'),
@@ -1282,7 +1282,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Valparaíso de Goiás','GO'),
 	 ('Varjão','GO'),
 	 ('Vianópolis','GO');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Vicentinópolis','GO'),
 	 ('Vila Boa','GO'),
 	 ('Vila Propício','GO'),
@@ -1293,7 +1293,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Aldeias Altas','MA'),
 	 ('Altamira do Maranhão','MA'),
 	 ('Alto Alegre do Maranhão','MA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Alto Alegre do Pindaré','MA'),
 	 ('Alto Parnaíba','MA'),
 	 ('Amapá do Maranhão','MA'),
@@ -1304,7 +1304,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Araguanã','MA'),
 	 ('Araioses','MA'),
 	 ('Arame','MA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Arari','MA'),
 	 ('Axixá','MA'),
 	 ('Bacabal','MA'),
@@ -1315,7 +1315,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Barão de Grajaú','MA'),
 	 ('Barra do Corda','MA'),
 	 ('Barreirinhas','MA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Bela Vista do Maranhão','MA'),
 	 ('Belágua','MA'),
 	 ('Benedito Leite','MA'),
@@ -1326,7 +1326,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Bom Jesus das Selvas','MA'),
 	 ('Bom Lugar','MA'),
 	 ('Brejo','MA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Brejo de Areia','MA'),
 	 ('Buriti','MA'),
 	 ('Buriti Bravo','MA'),
@@ -1337,7 +1337,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Cajari','MA'),
 	 ('Campestre do Maranhão','MA'),
 	 ('Cândido Mendes','MA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Cantanhede','MA'),
 	 ('Capinzal do Norte','MA'),
 	 ('Carolina','MA'),
@@ -1348,7 +1348,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Centro do Guilherme','MA'),
 	 ('Centro Novo do Maranhão','MA'),
 	 ('Chapadinha','MA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Cidelândia','MA'),
 	 ('Codó','MA'),
 	 ('Coelho Neto','MA'),
@@ -1359,7 +1359,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Davinópolis','MA'),
 	 ('Dom Pedro','MA'),
 	 ('Duque Bacelar','MA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Esperantinópolis','MA'),
 	 ('Estreito','MA'),
 	 ('Feira Nova do Maranhão','MA'),
@@ -1370,7 +1370,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Godofredo Viana','MA'),
 	 ('Gonçalves Dias','MA'),
 	 ('Governador Archer','MA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Governador Edison Lobão','MA'),
 	 ('Governador Eugênio Barros','MA'),
 	 ('Governador Luiz Rocha','MA'),
@@ -1381,7 +1381,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Guimarães','MA'),
 	 ('Humberto de Campos','MA'),
 	 ('Icatu','MA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Igarapé do Meio','MA'),
 	 ('Igarapé Grande','MA'),
 	 ('Imperatriz','MA'),
@@ -1392,7 +1392,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Jenipapo dos Vieiras','MA'),
 	 ('João Lisboa','MA'),
 	 ('Joselândia','MA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Junco do Maranhão','MA'),
 	 ('Lago da Pedra','MA'),
 	 ('Lago do Junco','MA'),
@@ -1403,7 +1403,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Lajeado Novo','MA'),
 	 ('Lima Campos','MA'),
 	 ('Loreto','MA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Luís Domingues','MA'),
 	 ('Magalhães de Almeida','MA'),
 	 ('Maracaçumé','MA'),
@@ -1414,7 +1414,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Matões','MA'),
 	 ('Matões do Norte','MA'),
 	 ('Milagres do Maranhão','MA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Mirador','MA'),
 	 ('Miranda do Norte','MA'),
 	 ('Mirinzal','MA'),
@@ -1425,7 +1425,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Nova Colinas','MA'),
 	 ('Nova Iorque','MA'),
 	 ('Nova Olinda do Maranhão','MA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Olho d''Água das Cunhãs','MA'),
 	 ('Olinda Nova do Maranhão','MA'),
 	 ('Paço do Lumiar','MA'),
@@ -1436,7 +1436,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Pastos Bons','MA'),
 	 ('Paulino Neves','MA'),
 	 ('Paulo Ramos','MA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Pedreiras','MA'),
 	 ('Pedro do Rosário','MA'),
 	 ('Penalva','MA'),
@@ -1447,7 +1447,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Pio XII','MA'),
 	 ('Pirapemas','MA'),
 	 ('Poção de Pedras','MA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Porto Franco','MA'),
 	 ('Porto Rico do Maranhão','MA'),
 	 ('Presidente Dutra','MA'),
@@ -1458,7 +1458,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Primeira Cruz','MA'),
 	 ('Raposa','MA'),
 	 ('Riachão','MA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Ribamar Fiquene','MA'),
 	 ('Rosário','MA'),
 	 ('Sambaíba','MA'),
@@ -1469,7 +1469,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Santa Luzia do Paruá','MA'),
 	 ('Santa Quitéria do Maranhão','MA'),
 	 ('Santa Rita','MA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Santana do Maranhão','MA'),
 	 ('Santo Amaro do Maranhão','MA'),
 	 ('Santo Antônio dos Lopes','MA'),
@@ -1480,7 +1480,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('São Domingos do Maranhão','MA'),
 	 ('São Félix de Balsas','MA'),
 	 ('São Francisco do Brejão','MA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('São Francisco do Maranhão','MA'),
 	 ('São João Batista','MA'),
 	 ('São João do Carú','MA'),
@@ -1491,7 +1491,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('São José dos Basílios','MA'),
 	 ('São Luís','MA'),
 	 ('São Luís Gonzaga do Maranhão','MA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('São Mateus do Maranhão','MA'),
 	 ('São Pedro da Água Branca','MA'),
 	 ('São Pedro dos Crentes','MA'),
@@ -1502,7 +1502,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Satubinha','MA'),
 	 ('Senador Alexandre Costa','MA'),
 	 ('Senador La Rocque','MA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Serrano do Maranhão','MA'),
 	 ('Sítio Novo','MA'),
 	 ('Sucupira do Norte','MA'),
@@ -1513,7 +1513,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Trizidela do Vale','MA'),
 	 ('Tufilândia','MA'),
 	 ('Tuntum','MA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Turiaçu','MA'),
 	 ('Turilândia','MA'),
 	 ('Tutóia','MA'),
@@ -1524,7 +1524,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Vitória do Mearim','MA'),
 	 ('Vitorino Freire','MA'),
 	 ('Zé Doca','MA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Abadia dos Dourados','MG'),
 	 ('Abaeté','MG'),
 	 ('Abre Campo','MG'),
@@ -1535,7 +1535,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Aguanil','MG'),
 	 ('Águas Formosas','MG'),
 	 ('Águas Vermelhas','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Aimorés','MG'),
 	 ('Aiuruoca','MG'),
 	 ('Alagoa','MG'),
@@ -1546,7 +1546,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Almenara','MG'),
 	 ('Alpercata','MG'),
 	 ('Alpinópolis','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Alterosa','MG'),
 	 ('Alto Caparaó','MG'),
 	 ('Alto Jequitibá','MG'),
@@ -1557,7 +1557,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Amparo do Serra','MG'),
 	 ('Andradas','MG'),
 	 ('Andrelândia','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Angelândia','MG'),
 	 ('Antônio Carlos','MG'),
 	 ('Antônio Dias','MG'),
@@ -1568,7 +1568,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Araguari','MG'),
 	 ('Arantina','MG'),
 	 ('Araponga','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Araporã','MG'),
 	 ('Arapuá','MG'),
 	 ('Araújos','MG'),
@@ -1579,7 +1579,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Argirita','MG'),
 	 ('Aricanduva','MG'),
 	 ('Arinos','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Astolfo Dutra','MG'),
 	 ('Ataléia','MG'),
 	 ('Augusto de Lima','MG'),
@@ -1590,7 +1590,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Bandeira do Sul','MG'),
 	 ('Barão de Cocais','MG'),
 	 ('Barão de Monte Alto','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Barbacena','MG'),
 	 ('Barra Longa','MG'),
 	 ('Barroso','MG'),
@@ -1601,7 +1601,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Belo Vale','MG'),
 	 ('Berilo','MG'),
 	 ('Berizal','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Bertópolis','MG'),
 	 ('Betim','MG'),
 	 ('Bias Fortes','MG'),
@@ -1612,7 +1612,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Bocaiúva','MG'),
 	 ('Bom Despacho','MG'),
 	 ('Bom Jardim de Minas','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Bom Jesus da Penha','MG'),
 	 ('Bom Jesus do Amparo','MG'),
 	 ('Bom Jesus do Galho','MG'),
@@ -1623,7 +1623,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Bonito de Minas','MG'),
 	 ('Borda da Mata','MG'),
 	 ('Botelhos','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Botumirim','MG'),
 	 ('Brás Pires','MG'),
 	 ('Brasilândia de Minas','MG'),
@@ -1634,7 +1634,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Bueno Brandão','MG'),
 	 ('Buenópolis','MG'),
 	 ('Bugre','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Buritis','MG'),
 	 ('Buritizeiro','MG'),
 	 ('Cabeceira Grande','MG'),
@@ -1645,7 +1645,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Cachoeira Dourada','MG'),
 	 ('Caetanópolis','MG'),
 	 ('Caeté','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Caiana','MG'),
 	 ('Cajuri','MG'),
 	 ('Caldas','MG'),
@@ -1656,7 +1656,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Campanário','MG'),
 	 ('Campanha','MG'),
 	 ('Campestre','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Campina Verde','MG'),
 	 ('Campo Azul','MG'),
 	 ('Campo Belo','MG'),
@@ -1667,7 +1667,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Cana Verde','MG'),
 	 ('Canaã','MG'),
 	 ('Canápolis','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Candeias','MG'),
 	 ('Cantagalo','MG'),
 	 ('Caparaó','MG'),
@@ -1678,7 +1678,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Capinópolis','MG'),
 	 ('Capitão Andrade','MG'),
 	 ('Capitão Enéas','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Capitólio','MG'),
 	 ('Caputira','MG'),
 	 ('Caraí','MG'),
@@ -1689,7 +1689,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Carbonita','MG'),
 	 ('Careaçu','MG'),
 	 ('Carlos Chagas','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Carmésia','MG'),
 	 ('Carmo da Cachoeira','MG'),
 	 ('Carmo da Mata','MG'),
@@ -1700,7 +1700,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Carmópolis de Minas','MG'),
 	 ('Carneirinho','MG'),
 	 ('Carrancas','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Carvalhópolis','MG'),
 	 ('Carvalhos','MG'),
 	 ('Casa Grande','MG'),
@@ -1711,7 +1711,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Catas Altas da Noruega','MG'),
 	 ('Catuji','MG'),
 	 ('Catuti','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Caxambu','MG'),
 	 ('Cedro do Abaeté','MG'),
 	 ('Central de Minas','MG'),
@@ -1722,7 +1722,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Chapada Gaúcha','MG'),
 	 ('Chiador','MG'),
 	 ('Cipotânea','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Claraval','MG'),
 	 ('Claro dos Poções','MG'),
 	 ('Cláudio','MG'),
@@ -1733,7 +1733,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Conceição da Aparecida','MG'),
 	 ('Conceição da Barra de Minas','MG'),
 	 ('Conceição das Alagoas','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Conceição das Pedras','MG'),
 	 ('Conceição de Ipanema','MG'),
 	 ('Conceição do Mato Dentro','MG'),
@@ -1744,7 +1744,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Confins','MG'),
 	 ('Congonhal','MG'),
 	 ('Congonhas','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Congonhas do Norte','MG'),
 	 ('Conquista','MG'),
 	 ('Conselheiro Lafaiete','MG'),
@@ -1755,7 +1755,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Coração de Jesus','MG'),
 	 ('Cordisburgo','MG'),
 	 ('Cordislândia','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Corinto','MG'),
 	 ('Coroaci','MG'),
 	 ('Coromandel','MG'),
@@ -1766,7 +1766,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Córrego Danta','MG'),
 	 ('Córrego do Bom Jesus','MG'),
 	 ('Córrego Fundo','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Córrego Novo','MG'),
 	 ('Couto de Magalhães de Minas','MG'),
 	 ('Crisólita','MG'),
@@ -1777,7 +1777,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Crucilândia','MG'),
 	 ('Cruzeiro da Fortaleza','MG'),
 	 ('Cruzília','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Cuparaque','MG'),
 	 ('Curral de Dentro','MG'),
 	 ('Curvelo','MG'),
@@ -1788,7 +1788,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Descoberto','MG'),
 	 ('Desterro de Entre Rios','MG'),
 	 ('Desterro do Melo','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Diamantina','MG'),
 	 ('Diogo de Vasconcelos','MG'),
 	 ('Dionísio','MG'),
@@ -1799,7 +1799,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Divinópolis','MG'),
 	 ('Divisa Alegre','MG'),
 	 ('Divisa Nova','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Divisópolis','MG'),
 	 ('Dom Bosco','MG'),
 	 ('Dom Cavati','MG'),
@@ -1810,7 +1810,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Dores de Campos','MG'),
 	 ('Dores de Guanhães','MG'),
 	 ('Dores do Indaiá','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Dores do Turvo','MG'),
 	 ('Doresópolis','MG'),
 	 ('Douradoquara','MG'),
@@ -1821,7 +1821,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Entre Folhas','MG'),
 	 ('Entre Rios de Minas','MG'),
 	 ('Ervália','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Esmeraldas','MG'),
 	 ('Espera Feliz','MG'),
 	 ('Espinosa','MG'),
@@ -1832,7 +1832,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Estrela do Sul','MG'),
 	 ('Eugenópolis','MG'),
 	 ('Ewbank da Câmara','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Extrema','MG'),
 	 ('Fama','MG'),
 	 ('Faria Lemos','MG'),
@@ -1843,7 +1843,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Ferros','MG'),
 	 ('Fervedouro','MG'),
 	 ('Florestal','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Formiga','MG'),
 	 ('Formoso','MG'),
 	 ('Fortaleza de Minas','MG'),
@@ -1854,7 +1854,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Franciscópolis','MG'),
 	 ('Frei Gaspar','MG'),
 	 ('Frei Inocêncio','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Frei Lagonegro','MG'),
 	 ('Fronteira','MG'),
 	 ('Fronteira dos Vales','MG'),
@@ -1865,7 +1865,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Gameleiras','MG'),
 	 ('Glaucilândia','MG'),
 	 ('Goiabeira','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Goianá','MG'),
 	 ('Gonçalves','MG'),
 	 ('Gonzaga','MG'),
@@ -1876,7 +1876,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Guanhães','MG'),
 	 ('Guapé','MG'),
 	 ('Guaraciaba','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Guaraciama','MG'),
 	 ('Guaranésia','MG'),
 	 ('Guarani','MG'),
@@ -1887,7 +1887,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Guimarânia','MG'),
 	 ('Guiricema','MG'),
 	 ('Gurinhatã','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Heliodora','MG'),
 	 ('Iapu','MG'),
 	 ('Ibertioga','MG'),
@@ -1898,7 +1898,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Ibirité','MG'),
 	 ('Ibitiúra de Minas','MG'),
 	 ('Ibituruna','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Icaraí de Minas','MG'),
 	 ('Igarapé','MG'),
 	 ('Igaratinga','MG'),
@@ -1909,7 +1909,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Inconfidentes','MG'),
 	 ('Indaiabira','MG'),
 	 ('Indianópolis','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Ingaí','MG'),
 	 ('Inhapim','MG'),
 	 ('Inhaúma','MG'),
@@ -1920,7 +1920,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Ipiaçu','MG'),
 	 ('Ipuiúna','MG'),
 	 ('Iraí de Minas','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Itabira','MG'),
 	 ('Itabirinha de Mantena','MG'),
 	 ('Itabirito','MG'),
@@ -1931,7 +1931,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Itajubá','MG'),
 	 ('Itamarandiba','MG'),
 	 ('Itamarati de Minas','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Itambacuri','MG'),
 	 ('Itambé do Mato Dentro','MG'),
 	 ('Itamogi','MG'),
@@ -1942,7 +1942,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Itapagipe','MG'),
 	 ('Itapecerica','MG'),
 	 ('Itapeva','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Itatiaiuçu','MG'),
 	 ('Itaú de Minas','MG'),
 	 ('Itaúna','MG'),
@@ -1953,7 +1953,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Itumirim','MG'),
 	 ('Iturama','MG'),
 	 ('Itutinga','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Jaboticatubas','MG'),
 	 ('Jacinto','MG'),
 	 ('Jacuí','MG'),
@@ -1964,7 +1964,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Janaúba','MG'),
 	 ('Januária','MG'),
 	 ('Japaraíba','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Japonvar','MG'),
 	 ('Jeceaba','MG'),
 	 ('Jenipapo de Minas','MG'),
@@ -1975,7 +1975,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Jesuânia','MG'),
 	 ('Joaíma','MG'),
 	 ('Joanésia','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('João Monlevade','MG'),
 	 ('João Pinheiro','MG'),
 	 ('Joaquim Felício','MG'),
@@ -1986,7 +1986,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Juatuba','MG'),
 	 ('Juiz de Fora','MG'),
 	 ('Juramento','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Juruaia','MG'),
 	 ('Juvenília','MG'),
 	 ('Ladainha','MG'),
@@ -1997,7 +1997,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Lagoa Formosa','MG'),
 	 ('Lagoa Grande','MG'),
 	 ('Lagoa Santa','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Lajinha','MG'),
 	 ('Lambari','MG'),
 	 ('Lamim','MG'),
@@ -2008,7 +2008,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Leme do Prado','MG'),
 	 ('Leopoldina','MG'),
 	 ('Liberdade','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Lima Duarte','MG'),
 	 ('Limeira do Oeste','MG'),
 	 ('Lontra','MG'),
@@ -2019,7 +2019,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Machacalis','MG'),
 	 ('Machado','MG'),
 	 ('Madre de Deus de Minas','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Malacacheta','MG'),
 	 ('Mamonas','MG'),
 	 ('Manga','MG'),
@@ -2030,7 +2030,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Maravilhas','MG'),
 	 ('Maria da Fé','MG'),
 	 ('Mariana','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Marilac','MG'),
 	 ('Mário Campos','MG'),
 	 ('Maripá de Minas','MG'),
@@ -2041,7 +2041,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Mata Verde','MG'),
 	 ('Materlândia','MG'),
 	 ('Mateus Leme','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Mathias Lobato','MG'),
 	 ('Matias Barbosa','MG'),
 	 ('Matias Cardoso','MG'),
@@ -2052,7 +2052,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Medeiros','MG'),
 	 ('Medina','MG'),
 	 ('Mendes Pimentel','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Mercês','MG'),
 	 ('Mesquita','MG'),
 	 ('Minas Novas','MG'),
@@ -2063,7 +2063,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Miravânia','MG'),
 	 ('Moeda','MG'),
 	 ('Moema','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Monjolos','MG'),
 	 ('Monsenhor Paulo','MG'),
 	 ('Montalvânia','MG'),
@@ -2074,7 +2074,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Monte Formoso','MG'),
 	 ('Monte Santo de Minas','MG'),
 	 ('Monte Sião','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Montes Claros','MG'),
 	 ('Montezuma','MG'),
 	 ('Morada Nova de Minas','MG'),
@@ -2085,7 +2085,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Mutum','MG'),
 	 ('Muzambinho','MG'),
 	 ('Nacip Raydan','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Nanuque','MG'),
 	 ('Naque','MG'),
 	 ('Natalândia','MG'),
@@ -2096,7 +2096,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Nova Belém','MG'),
 	 ('Nova Era','MG'),
 	 ('Nova Lima','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Nova Módica','MG'),
 	 ('Nova Ponte','MG'),
 	 ('Nova Porteirinha','MG'),
@@ -2107,7 +2107,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Novo Oriente de Minas','MG'),
 	 ('Novorizonte','MG'),
 	 ('Olaria','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Olhos-d''Água','MG'),
 	 ('Olímpio Noronha','MG'),
 	 ('Oliveira','MG'),
@@ -2118,7 +2118,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Ouro Branco','MG'),
 	 ('Ouro Fino','MG'),
 	 ('Ouro Preto','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Ouro Verde de Minas','MG'),
 	 ('Padre Carvalho','MG'),
 	 ('Padre Paraíso','MG'),
@@ -2129,7 +2129,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Palma','MG'),
 	 ('Palmópolis','MG'),
 	 ('Papagaios','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Pará de Minas','MG'),
 	 ('Paracatu','MG'),
 	 ('Paraguaçu','MG'),
@@ -2140,7 +2140,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Passa-Vinte','MG'),
 	 ('Passabém','MG'),
 	 ('Passos','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Patis','MG'),
 	 ('Patos de Minas','MG'),
 	 ('Patrocínio','MG'),
@@ -2151,7 +2151,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Peçanha','MG'),
 	 ('Pedra Azul','MG'),
 	 ('Pedra Bonita','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Pedra do Anta','MG'),
 	 ('Pedra do Indaiá','MG'),
 	 ('Pedra Dourada','MG'),
@@ -2162,7 +2162,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Pedro Teixeira','MG'),
 	 ('Pequeri','MG'),
 	 ('Pequi','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Perdigão','MG'),
 	 ('Perdizes','MG'),
 	 ('Perdões','MG'),
@@ -2173,7 +2173,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Piedade de Ponte Nova','MG'),
 	 ('Piedade do Rio Grande','MG'),
 	 ('Piedade dos Gerais','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Pimenta','MG'),
 	 ('Pingo-d''Água','MG'),
 	 ('Pintópolis','MG'),
@@ -2184,7 +2184,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Piranguinho','MG'),
 	 ('Pirapetinga','MG'),
 	 ('Pirapora','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Piraúba','MG'),
 	 ('Pitangui','MG'),
 	 ('Piumhi','MG'),
@@ -2195,7 +2195,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Pompéu','MG'),
 	 ('Ponte Nova','MG'),
 	 ('Ponto Chique','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Ponto dos Volantes','MG'),
 	 ('Porteirinha','MG'),
 	 ('Porto Firme','MG'),
@@ -2206,7 +2206,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Prata','MG'),
 	 ('Pratápolis','MG'),
 	 ('Pratinha','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Presidente Bernardes','MG'),
 	 ('Presidente Juscelino','MG'),
 	 ('Presidente Kubitschek','MG'),
@@ -2217,7 +2217,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Raposos','MG'),
 	 ('Raul Soares','MG'),
 	 ('Recreio','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Reduto','MG'),
 	 ('Resende Costa','MG'),
 	 ('Resplendor','MG'),
@@ -2228,7 +2228,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Ribeirão Vermelho','MG'),
 	 ('Rio Acima','MG'),
 	 ('Rio Casca','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Rio do Prado','MG'),
 	 ('Rio Doce','MG'),
 	 ('Rio Espera','MG'),
@@ -2239,7 +2239,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Rio Piracicaba','MG'),
 	 ('Rio Pomba','MG'),
 	 ('Rio Preto','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Rio Vermelho','MG'),
 	 ('Ritápolis','MG'),
 	 ('Rochedo de Minas','MG'),
@@ -2250,7 +2250,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Rubim','MG'),
 	 ('Sabará','MG'),
 	 ('Sabinópolis','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Sacramento','MG'),
 	 ('Salinas','MG'),
 	 ('Salto da Divisa','MG'),
@@ -2261,7 +2261,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Santa Cruz de Minas','MG'),
 	 ('Santa Cruz de Salinas','MG'),
 	 ('Santa Cruz do Escalvado','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Santa Efigênia de Minas','MG'),
 	 ('Santa Fé de Minas','MG'),
 	 ('Santa Helena de Minas','MG'),
@@ -2272,7 +2272,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Santa Maria do Salto','MG'),
 	 ('Santa Maria do Suaçuí','MG'),
 	 ('Santa Rita de Caldas','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Santa Rita de Ibitipoca','MG'),
 	 ('Santa Rita de Jacutinga','MG'),
 	 ('Santa Rita de Minas','MG'),
@@ -2283,7 +2283,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Santana da Vargem','MG'),
 	 ('Santana de Cataguases','MG'),
 	 ('Santana de Pirapama','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Santana do Deserto','MG'),
 	 ('Santana do Garambéu','MG'),
 	 ('Santana do Jacaré','MG'),
@@ -2294,7 +2294,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Santo Antônio do Amparo','MG'),
 	 ('Santo Antônio do Aventureiro','MG'),
 	 ('Santo Antônio do Grama','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Santo Antônio do Itambé','MG'),
 	 ('Santo Antônio do Jacinto','MG'),
 	 ('Santo Antônio do Monte','MG'),
@@ -2305,7 +2305,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('São Bento Abade','MG'),
 	 ('São Brás do Suaçuí','MG'),
 	 ('São Domingos das Dores','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('São Domingos do Prata','MG'),
 	 ('São Félix de Minas','MG'),
 	 ('São Francisco','MG'),
@@ -2316,7 +2316,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('São Geraldo da Piedade','MG'),
 	 ('São Geraldo do Baixio','MG'),
 	 ('São Gonçalo do Abaeté','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('São Gonçalo do Pará','MG'),
 	 ('São Gonçalo do Rio Abaixo','MG'),
 	 ('São Gonçalo do Rio Preto','MG'),
@@ -2327,7 +2327,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('São João da Mata','MG'),
 	 ('São João da Ponte','MG'),
 	 ('São João das Missões','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('São João del Rei','MG'),
 	 ('São João do Manhuaçu','MG'),
 	 ('São João do Manteninha','MG'),
@@ -2338,7 +2338,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('São João Nepomuceno','MG'),
 	 ('São Joaquim de Bicas','MG'),
 	 ('São José da Barra','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('São José da Lapa','MG'),
 	 ('São José da Safira','MG'),
 	 ('São José da Varginha','MG'),
@@ -2349,7 +2349,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('São José do Mantimento','MG'),
 	 ('São Lourenço','MG'),
 	 ('São Miguel do Anta','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('São Pedro da União','MG'),
 	 ('São Pedro do Suaçuí','MG'),
 	 ('São Pedro dos Ferros','MG'),
@@ -2360,7 +2360,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('São Sebastião do Anta','MG'),
 	 ('São Sebastião do Maranhão','MG'),
 	 ('São Sebastião do Oeste','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('São Sebastião do Paraíso','MG'),
 	 ('São Sebastião do Rio Preto','MG'),
 	 ('São Sebastião do Rio Verde','MG'),
@@ -2371,7 +2371,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Sapucaí-Mirim','MG'),
 	 ('Sardoá','MG'),
 	 ('Sarzedo','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Sem-Peixe','MG'),
 	 ('Senador Amaral','MG'),
 	 ('Senador Cortes','MG'),
@@ -2382,7 +2382,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Senhora do Porto','MG'),
 	 ('Senhora dos Remédios','MG'),
 	 ('Sericita','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Seritinga','MG'),
 	 ('Serra Azul de Minas','MG'),
 	 ('Serra da Saudade','MG'),
@@ -2393,7 +2393,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Serranos','MG'),
 	 ('Serro','MG'),
 	 ('Sete Lagoas','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Setubinha','MG'),
 	 ('Silveirânia','MG'),
 	 ('Silvianópolis','MG'),
@@ -2404,7 +2404,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Tabuleiro','MG'),
 	 ('Taiobeiras','MG'),
 	 ('Taparuba','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Tapira','MG'),
 	 ('Tapiraí','MG'),
 	 ('Taquaraçu de Minas','MG'),
@@ -2415,7 +2415,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Tiradentes','MG'),
 	 ('Tiros','MG'),
 	 ('Tocantins','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Tocos do Moji','MG'),
 	 ('Toledo','MG'),
 	 ('Tombos','MG'),
@@ -2426,7 +2426,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Tupaciguara','MG'),
 	 ('Turmalina','MG'),
 	 ('Turvolândia','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Ubá','MG'),
 	 ('Ubaí','MG'),
 	 ('Ubaporanga','MG'),
@@ -2437,7 +2437,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('União de Minas','MG'),
 	 ('Uruana de Minas','MG'),
 	 ('Urucânia','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Urucuia','MG'),
 	 ('Vargem Alegre','MG'),
 	 ('Vargem Bonita','MG'),
@@ -2448,7 +2448,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Varzelândia','MG'),
 	 ('Vazante','MG'),
 	 ('Verdelândia','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Veredinha','MG'),
 	 ('Veríssimo','MG'),
 	 ('Vermelho Novo','MG'),
@@ -2459,7 +2459,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Virgínia','MG'),
 	 ('Virginópolis','MG'),
 	 ('Virgolândia','MG');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Visconde do Rio Branco','MG'),
 	 ('Volta Grande','MG'),
 	 ('Wenceslau Braz','MG'),
@@ -2470,7 +2470,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Anaurilândia','MS'),
 	 ('Angélica','MS'),
 	 ('Antônio João','MS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Aparecida do Taboado','MS'),
 	 ('Aquidauana','MS'),
 	 ('Aral Moreira','MS'),
@@ -2481,7 +2481,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Bodoquena','MS'),
 	 ('Bonito','MS'),
 	 ('Brasilândia','MS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Caarapó','MS'),
 	 ('Camapuã','MS'),
 	 ('Campo Grande','MS'),
@@ -2492,7 +2492,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Coronel Sapucaia','MS'),
 	 ('Corumbá','MS'),
 	 ('Costa Rica','MS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Coxim','MS'),
 	 ('Deodápolis','MS'),
 	 ('Dois Irmãos do Buriti','MS'),
@@ -2503,7 +2503,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Glória de Dourados','MS'),
 	 ('Guia Lopes da Laguna','MS'),
 	 ('Iguatemi','MS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Inocência','MS'),
 	 ('Itaporã','MS'),
 	 ('Itaquiraí','MS'),
@@ -2514,7 +2514,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Jateí','MS'),
 	 ('Juti','MS'),
 	 ('Ladário','MS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Laguna Carapã','MS'),
 	 ('Maracaju','MS'),
 	 ('Miranda','MS'),
@@ -2525,7 +2525,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Nova Andradina','MS'),
 	 ('Novo Horizonte do Sul','MS'),
 	 ('Paranaíba','MS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Paranhos','MS'),
 	 ('Pedro Gomes','MS'),
 	 ('Ponta Porã','MS'),
@@ -2536,7 +2536,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Rio Verde de Mato Grosso','MS'),
 	 ('Rochedo','MS'),
 	 ('Santa Rita do Pardo','MS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('São Gabriel do Oeste','MS'),
 	 ('Selvíria','MS'),
 	 ('Sete Quedas','MS'),
@@ -2547,7 +2547,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Terenos','MS'),
 	 ('Três Lagoas','MS'),
 	 ('Vicentina','MS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Acorizal','MT'),
 	 ('Água Boa','MT'),
 	 ('Alta Floresta','MT'),
@@ -2558,7 +2558,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Alto Taquari','MT'),
 	 ('Apiacás','MT'),
 	 ('Araguaiana','MT');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Araguainha','MT'),
 	 ('Araputanga','MT'),
 	 ('Arenápolis','MT'),
@@ -2569,7 +2569,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Bom Jesus do Araguaia','MT'),
 	 ('Brasnorte','MT'),
 	 ('Cáceres','MT');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Campinápolis','MT'),
 	 ('Campo Novo do Parecis','MT'),
 	 ('Campo Verde','MT'),
@@ -2580,7 +2580,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Castanheira','MT'),
 	 ('Chapada dos Guimarães','MT'),
 	 ('Cláudia','MT');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Cocalinho','MT'),
 	 ('Colíder','MT'),
 	 ('Colniza','MT'),
@@ -2591,7 +2591,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Curvelândia','MT'),
 	 ('Cuiabá','MT'),
 	 ('Denise','MT');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Diamantino','MT'),
 	 ('Dom Aquino','MT'),
 	 ('Feliz Natal','MT'),
@@ -2602,7 +2602,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Guarantã do Norte','MT'),
 	 ('Guiratinga','MT'),
 	 ('Indiavaí','MT');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Itaúba','MT'),
 	 ('Itiquira','MT'),
 	 ('Jaciara','MT'),
@@ -2613,7 +2613,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Juruena','MT'),
 	 ('Juscimeira','MT'),
 	 ('Lambari d''Oeste','MT');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Lucas do Rio Verde','MT'),
 	 ('Luciára','MT'),
 	 ('Marcelândia','MT'),
@@ -2624,7 +2624,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Nossa Senhora do Livramento','MT'),
 	 ('Nova Bandeirantes','MT'),
 	 ('Nova Brasilândia','MT');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Nova Canãa do Norte','MT'),
 	 ('Nova Guarita','MT'),
 	 ('Nova Lacerda','MT'),
@@ -2635,7 +2635,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Nova Nazaré','MT'),
 	 ('Nova Olímpia','MT'),
 	 ('Nova Santa Helena','MT');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Nova Ubiratã','MT'),
 	 ('Nova Xavantina','MT'),
 	 ('Novo Horizonte do Norte','MT'),
@@ -2646,7 +2646,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Paranatinga','MT'),
 	 ('Pedra Preta','MT'),
 	 ('Peixoto de Azevedo','MT');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Planalto da Serra','MT'),
 	 ('Poconé','MT'),
 	 ('Pontal do Araguaia','MT'),
@@ -2657,7 +2657,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Porto Esperidião','MT'),
 	 ('Porto Estrela','MT'),
 	 ('Poxoréo','MT');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Primavera do Leste','MT'),
 	 ('Querência','MT'),
 	 ('Reserva do Cabaçal','MT'),
@@ -2668,7 +2668,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Rondonópolis','MT'),
 	 ('Rosário Oeste','MT'),
 	 ('Salto do Céu','MT');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Santa Carmem','MT'),
 	 ('Santa Cruz do Xingu','MT'),
 	 ('Santa Rita do Trivelato','MT'),
@@ -2679,7 +2679,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('São Félix do Araguaia','MT'),
 	 ('São José do Povo','MT'),
 	 ('São José do Rio Claro','MT');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('São José do Xingu','MT'),
 	 ('São José dos Quatro Marcos','MT'),
 	 ('São Pedro da Cipa','MT'),
@@ -2690,7 +2690,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Tabaporã','MT'),
 	 ('Tangará da Serra','MT'),
 	 ('Tapurah','MT');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Terra Nova do Norte','MT'),
 	 ('Tesouro','MT'),
 	 ('Torixoréu','MT'),
@@ -2701,7 +2701,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Vila Bela da Santíssima Trindade','MT'),
 	 ('Vila Rica','MT'),
 	 ('Abaetetuba','PA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Abel Figueiredo','PA'),
 	 ('Acará','PA'),
 	 ('Afuá','PA'),
@@ -2712,7 +2712,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Anajás','PA'),
 	 ('Ananindeua','PA'),
 	 ('Anapu','PA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Augusto Corrêa','PA'),
 	 ('Aurora do Pará','PA'),
 	 ('Aveiro','PA'),
@@ -2723,7 +2723,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Belém','PA'),
 	 ('Belterra','PA'),
 	 ('Benevides','PA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Bom Jesus do Tocantins','PA'),
 	 ('Bonito','PA'),
 	 ('Bragança','PA'),
@@ -2734,7 +2734,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Bujaru','PA'),
 	 ('Cachoeira do Arari','PA'),
 	 ('Cachoeira do Piriá','PA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Cametá','PA'),
 	 ('Canaã dos Carajás','PA'),
 	 ('Capanema','PA'),
@@ -2745,7 +2745,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Conceição do Araguaia','PA'),
 	 ('Concórdia do Pará','PA'),
 	 ('Cumaru do Norte','PA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Curionópolis','PA'),
 	 ('Curralinho','PA'),
 	 ('Curuá','PA'),
@@ -2756,7 +2756,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Floresta do Araguaia','PA'),
 	 ('Garrafão do Norte','PA'),
 	 ('Goianésia do Pará','PA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Gurupá','PA'),
 	 ('Igarapé-Açu','PA'),
 	 ('Igarapé-Miri','PA'),
@@ -2767,7 +2767,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Itupiranga','PA'),
 	 ('Jacareacanga','PA'),
 	 ('Jacundá','PA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Juruti','PA'),
 	 ('Limoeiro do Ajuru','PA'),
 	 ('Mãe do Rio','PA'),
@@ -2778,7 +2778,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Marituba','PA'),
 	 ('Medicilândia','PA'),
 	 ('Melgaço','PA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Mocajuba','PA'),
 	 ('Moju','PA'),
 	 ('Monte Alegre','PA'),
@@ -2789,7 +2789,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Novo Progresso','PA'),
 	 ('Novo Repartimento','PA'),
 	 ('Óbidos','PA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Oeiras do Pará','PA'),
 	 ('Oriximiná','PA'),
 	 ('Ourém','PA'),
@@ -2800,7 +2800,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Parauapebas','PA'),
 	 ('Pau d''Arco','PA'),
 	 ('Peixe-Boi','PA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Piçarra','PA'),
 	 ('Placas','PA'),
 	 ('Ponta de Pedras','PA'),
@@ -2811,7 +2811,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Quatipuru','PA'),
 	 ('Redenção','PA'),
 	 ('Rio Maria','PA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Rondon do Pará','PA'),
 	 ('Rurópolis','PA'),
 	 ('Salinópolis','PA'),
@@ -2822,7 +2822,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Santa Luzia do Pará','PA'),
 	 ('Santa Maria das Barreiras','PA'),
 	 ('Santa Maria do Pará','PA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Santana do Araguaia','PA'),
 	 ('Santarém','PA'),
 	 ('Santarém Novo','PA'),
@@ -2833,7 +2833,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('São Félix do Xingu','PA'),
 	 ('São Francisco do Pará','PA'),
 	 ('São Geraldo do Araguaia','PA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('São João da Ponta','PA'),
 	 ('São João de Pirabas','PA'),
 	 ('São João do Araguaia','PA'),
@@ -2844,7 +2844,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Soure','PA'),
 	 ('Tailândia','PA'),
 	 ('Terra Alta','PA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Terra Santa','PA'),
 	 ('Tomé-Açu','PA'),
 	 ('Tracuateua','PA'),
@@ -2855,7 +2855,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Uruará','PA'),
 	 ('Vigia','PA'),
 	 ('Viseu','PA');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Vitória do Xingu','PA'),
 	 ('Xinguara','PA'),
 	 ('Água Branca','PB'),
@@ -2866,7 +2866,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Alcantil','PB'),
 	 ('Algodão de Jandaíra','PB'),
 	 ('Alhandra','PB');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Amparo','PB'),
 	 ('Aparecida','PB'),
 	 ('Araçagi','PB'),
@@ -2877,7 +2877,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Areial','PB'),
 	 ('Aroeiras','PB'),
 	 ('Assunção','PB');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Baía da Traição','PB'),
 	 ('Bananeiras','PB'),
 	 ('Baraúna','PB'),
@@ -2888,7 +2888,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Belém','PB'),
 	 ('Belém do Brejo do Cruz','PB'),
 	 ('Bernardino Batista','PB');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Boa Ventura','PB'),
 	 ('Boa Vista','PB'),
 	 ('Bom Jesus','PB'),
@@ -2899,7 +2899,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Brejo do Cruz','PB'),
 	 ('Brejo dos Santos','PB'),
 	 ('Caaporã','PB');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Cabaceiras','PB'),
 	 ('Cabedelo','PB'),
 	 ('Cachoeira dos Índios','PB'),
@@ -2910,7 +2910,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Cajazeiras','PB'),
 	 ('Cajazeirinhas','PB'),
 	 ('Caldas Brandão','PB');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Camalaú','PB'),
 	 ('Campina Grande','PB'),
 	 ('Campo de Santana','PB'),
@@ -2921,7 +2921,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Catingueira','PB'),
 	 ('Catolé do Rocha','PB'),
 	 ('Caturité','PB');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Conceição','PB'),
 	 ('Condado','PB'),
 	 ('Conde','PB'),
@@ -2932,7 +2932,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Cubati','PB'),
 	 ('Cuité','PB'),
 	 ('Cuité de Mamanguape','PB');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Cuitegi','PB'),
 	 ('Curral de Cima','PB'),
 	 ('Curral Velho','PB'),
@@ -2943,7 +2943,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Duas Estradas','PB'),
 	 ('Emas','PB'),
 	 ('Esperança','PB');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Fagundes','PB'),
 	 ('Frei Martinho','PB'),
 	 ('Gado Bravo','PB'),
@@ -2954,7 +2954,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Igaracy','PB'),
 	 ('Imaculada','PB'),
 	 ('Ingá','PB');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Itabaiana','PB'),
 	 ('Itaporanga','PB'),
 	 ('Itapororoca','PB'),
@@ -2965,7 +2965,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Juarez Távora','PB'),
 	 ('Juazeirinho','PB'),
 	 ('Junco do Seridó','PB');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Juripiranga','PB'),
 	 ('Juru','PB'),
 	 ('Lagoa','PB'),
@@ -2976,7 +2976,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Logradouro','PB'),
 	 ('Lucena','PB'),
 	 ('Mãe d''Água','PB');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Malta','PB'),
 	 ('Mamanguape','PB'),
 	 ('Manaíra','PB'),
@@ -2987,7 +2987,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Mataraca','PB'),
 	 ('Matinhas','PB'),
 	 ('Mato Grosso','PB');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Maturéia','PB'),
 	 ('Mogeiro','PB'),
 	 ('Montadas','PB'),
@@ -2998,7 +2998,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Nazarezinho','PB'),
 	 ('Nova Floresta','PB'),
 	 ('Nova Olinda','PB');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Nova Palmeira','PB'),
 	 ('Olho d''Água','PB'),
 	 ('Olivedos','PB'),
@@ -3009,7 +3009,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Paulista','PB'),
 	 ('Pedra Branca','PB'),
 	 ('Pedra Lavrada','PB');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Pedras de Fogo','PB'),
 	 ('Pedro Régis','PB'),
 	 ('Piancó','PB'),
@@ -3020,7 +3020,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Pirpirituba','PB'),
 	 ('Pitimbu','PB'),
 	 ('Pocinhos','PB');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Poço Dantas','PB'),
 	 ('Poço de José de Moura','PB'),
 	 ('Pombal','PB'),
@@ -3031,7 +3031,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Quixabá','PB'),
 	 ('Remígio','PB'),
 	 ('Riachão','PB');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Riachão do Bacamarte','PB'),
 	 ('Riachão do Poço','PB'),
 	 ('Riacho de Santo Antônio','PB'),
@@ -3042,7 +3042,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Santa Cecília','PB'),
 	 ('Santa Cruz','PB'),
 	 ('Santa Helena','PB');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Santa Inês','PB'),
 	 ('Santa Luzia','PB'),
 	 ('Santa Rita','PB'),
@@ -3053,7 +3053,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Santo André','PB'),
 	 ('São Bentinho','PB'),
 	 ('São Bento','PB');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('São Domingos de Pombal','PB'),
 	 ('São Domingos do Cariri','PB'),
 	 ('São Francisco','PB'),
@@ -3064,7 +3064,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('São José de Caiana','PB'),
 	 ('São José de Espinharas','PB'),
 	 ('São José de Piranhas','PB');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('São José de Princesa','PB'),
 	 ('São José do Bonfim','PB'),
 	 ('São José do Brejo do Cruz','PB'),
@@ -3075,7 +3075,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('São Miguel de Taipu','PB'),
 	 ('São Sebastião de Lagoa de Roça','PB'),
 	 ('São Sebastião do Umbuzeiro','PB');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Sapé','PB'),
 	 ('Seridó','PB'),
 	 ('Serra Branca','PB'),
@@ -3086,7 +3086,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Sertãozinho','PB'),
 	 ('Sobrado','PB'),
 	 ('Solânea','PB');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Soledade','PB'),
 	 ('Sossêgo','PB'),
 	 ('Sousa','PB'),
@@ -3097,7 +3097,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Tenório','PB'),
 	 ('Triunfo','PB'),
 	 ('Uiraúna','PB');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Umbuzeiro','PB'),
 	 ('Várzea','PB'),
 	 ('Vieirópolis','PB'),
@@ -3108,7 +3108,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Afrânio','PE'),
 	 ('Agrestina','PE'),
 	 ('Água Preta','PE');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Águas Belas','PE'),
 	 ('Alagoinha','PE'),
 	 ('Aliança','PE'),
@@ -3119,7 +3119,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Araripina','PE'),
 	 ('Arcoverde','PE'),
 	 ('Barra de Guabiraba','PE');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Barreiros','PE'),
 	 ('Belém de Maria','PE'),
 	 ('Belém de São Francisco','PE'),
@@ -3130,7 +3130,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Bom Conselho','PE'),
 	 ('Bom Jardim','PE'),
 	 ('Bonito','PE');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Brejão','PE'),
 	 ('Brejinho','PE'),
 	 ('Brejo da Madre de Deus','PE'),
@@ -3141,7 +3141,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Cachoeirinha','PE'),
 	 ('Caetés','PE'),
 	 ('Calçado','PE');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Calumbi','PE'),
 	 ('Camaragibe','PE'),
 	 ('Camocim de São Félix','PE'),
@@ -3152,7 +3152,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Carnaubeira da Penha','PE'),
 	 ('Carpina','PE'),
 	 ('Caruaru','PE');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Casinhas','PE'),
 	 ('Catende','PE'),
 	 ('Cedro','PE'),
@@ -3163,7 +3163,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Cortês','PE'),
 	 ('Cumaru','PE'),
 	 ('Cupira','PE');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Custódia','PE'),
 	 ('Dormentes','PE'),
 	 ('Escada','PE'),
@@ -3174,7 +3174,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Flores','PE'),
 	 ('Floresta','PE'),
 	 ('Frei Miguelinho','PE');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Gameleira','PE'),
 	 ('Garanhuns','PE'),
 	 ('Glória do Goitá','PE'),
@@ -3185,7 +3185,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Ibimirim','PE'),
 	 ('Ibirajuba','PE'),
 	 ('Igarassu','PE');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Iguaraci','PE'),
 	 ('Inajá','PE'),
 	 ('Ingazeira','PE'),
@@ -3196,7 +3196,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Itamaracá','PE'),
 	 ('Itambé','PE'),
 	 ('Itapetim','PE');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Itapissuma','PE'),
 	 ('Itaquitinga','PE'),
 	 ('Jaboatão dos Guararapes','PE'),
@@ -3207,7 +3207,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Joaquim Nabuco','PE'),
 	 ('Jucati','PE'),
 	 ('Jupi','PE');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Jurema','PE'),
 	 ('Lagoa do Carro','PE'),
 	 ('Lagoa do Itaenga','PE'),
@@ -3218,7 +3218,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Limoeiro','PE'),
 	 ('Macaparana','PE'),
 	 ('Machados','PE');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Manari','PE'),
 	 ('Maraial','PE'),
 	 ('Mirandiba','PE'),
@@ -3229,7 +3229,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Orobó','PE'),
 	 ('Orocó','PE'),
 	 ('Ouricuri','PE');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Palmares','PE'),
 	 ('Palmeirina','PE'),
 	 ('Panelas','PE'),
@@ -3240,7 +3240,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Paulista','PE'),
 	 ('Pedra','PE'),
 	 ('Pesqueira','PE');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Petrolândia','PE'),
 	 ('Petrolina','PE'),
 	 ('Poção','PE'),
@@ -3251,7 +3251,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Recife','PE'),
 	 ('Riacho das Almas','PE'),
 	 ('Ribeirão','PE');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Rio Formoso','PE'),
 	 ('Sairé','PE'),
 	 ('Salgadinho','PE'),
@@ -3262,7 +3262,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Santa Cruz da Baixa Verde','PE'),
 	 ('Santa Cruz do Capibaribe','PE'),
 	 ('Santa Filomena','PE');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Santa Maria da Boa Vista','PE'),
 	 ('Santa Maria do Cambucá','PE'),
 	 ('Santa Terezinha','PE'),
@@ -3273,7 +3273,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('São Joaquim do Monte','PE'),
 	 ('São José da Coroa Grande','PE'),
 	 ('São José do Belmonte','PE');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('São José do Egito','PE'),
 	 ('São Lourenço da Mata','PE'),
 	 ('São Vicente Ferrer','PE'),
@@ -3284,7 +3284,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Solidão','PE'),
 	 ('Surubim','PE'),
 	 ('Tabira','PE');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Tacaimbó','PE'),
 	 ('Tacaratu','PE'),
 	 ('Tamandaré','PE'),
@@ -3295,7 +3295,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Toritama','PE'),
 	 ('Tracunhaém','PE'),
 	 ('Trindade','PE');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Triunfo','PE'),
 	 ('Tupanatinga','PE'),
 	 ('Tuparetama','PE'),
@@ -3306,7 +3306,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Vicência','PE'),
 	 ('Vitória de Santo Antão','PE'),
 	 ('Xexéu','PE');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Acauã','PI'),
 	 ('Agricolândia','PI'),
 	 ('Água Branca','PI'),
@@ -3317,7 +3317,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Alvorada do Gurguéia','PI'),
 	 ('Amarante','PI'),
 	 ('Angical do Piauí','PI');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Anísio de Abreu','PI'),
 	 ('Antônio Almeida','PI'),
 	 ('Aroazes','PI'),
@@ -3328,7 +3328,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Barra d''Alcântara','PI'),
 	 ('Barras','PI'),
 	 ('Barreiras do Piauí','PI');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Barro Duro','PI'),
 	 ('Batalha','PI'),
 	 ('Bela Vista do Piauí','PI'),
@@ -3339,7 +3339,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Boa Hora','PI'),
 	 ('Bocaina','PI'),
 	 ('Bom Jesus','PI');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Bom Princípio do Piauí','PI'),
 	 ('Bonfim do Piauí','PI'),
 	 ('Boqueirão do Piauí','PI'),
@@ -3350,7 +3350,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Cabeceiras do Piauí','PI'),
 	 ('Cajazeiras do Piauí','PI'),
 	 ('Cajueiro da Praia','PI');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Caldeirão Grande do Piauí','PI'),
 	 ('Campinas do Piauí','PI'),
 	 ('Campo Alegre do Fidalgo','PI'),
@@ -3361,7 +3361,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Canto do Buriti','PI'),
 	 ('Capitão de Campos','PI'),
 	 ('Capitão Gervásio Oliveira','PI');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Caracol','PI'),
 	 ('Caraúbas do Piauí','PI'),
 	 ('Caridade do Piauí','PI'),
@@ -3372,7 +3372,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Cocal dos Alves','PI'),
 	 ('Coivaras','PI'),
 	 ('Colônia do Gurguéia','PI');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Colônia do Piauí','PI'),
 	 ('Conceição do Canindé','PI'),
 	 ('Coronel José Dias','PI'),
@@ -3383,7 +3383,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Currais','PI'),
 	 ('Curral Novo do Piauí','PI'),
 	 ('Curralinhos','PI');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Demerval Lobão','PI'),
 	 ('Dirceu Arcoverde','PI'),
 	 ('Dom Expedito Lopes','PI'),
@@ -3394,7 +3394,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Esperantina','PI'),
 	 ('Fartura do Piauí','PI'),
 	 ('Flores do Piauí','PI');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Floresta do Piauí','PI'),
 	 ('Floriano','PI'),
 	 ('Francinópolis','PI'),
@@ -3405,7 +3405,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Geminiano','PI'),
 	 ('Gilbués','PI'),
 	 ('Guadalupe','PI');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Guaribas','PI'),
 	 ('Hugo Napoleão','PI'),
 	 ('Ilha Grande','PI'),
@@ -3416,7 +3416,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Itaueira','PI'),
 	 ('Jacobina do Piauí','PI'),
 	 ('Jaicós','PI');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Jardim do Mulato','PI'),
 	 ('Jatobá do Piauí','PI'),
 	 ('Jerumenha','PI'),
@@ -3427,7 +3427,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Juazeiro do Piauí','PI'),
 	 ('Júlio Borges','PI'),
 	 ('Jurema','PI');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Lagoa Alegre','PI'),
 	 ('Lagoa de São Francisco','PI'),
 	 ('Lagoa do Barro do Piauí','PI'),
@@ -3438,7 +3438,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Luís Correia','PI'),
 	 ('Luzilândia','PI'),
 	 ('Madeiro','PI');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Manoel Emídio','PI'),
 	 ('Marcolândia','PI'),
 	 ('Marcos Parente','PI'),
@@ -3449,7 +3449,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Milton Brandão','PI'),
 	 ('Monsenhor Gil','PI'),
 	 ('Monsenhor Hipólito','PI');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Monte Alegre do Piauí','PI'),
 	 ('Morro Cabeça no Tempo','PI'),
 	 ('Morro do Chapéu do Piauí','PI'),
@@ -3460,7 +3460,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Nova Santa Rita','PI'),
 	 ('Novo Oriente do Piauí','PI'),
 	 ('Novo Santo Antônio','PI');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Oeiras','PI'),
 	 ('Olho d''Água do Piauí','PI'),
 	 ('Padre Marcos','PI'),
@@ -3471,7 +3471,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Paquetá','PI'),
 	 ('Parnaguá','PI'),
 	 ('Parnaíba','PI');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Passagem Franca do Piauí','PI'),
 	 ('Patos do Piauí','PI'),
 	 ('Pau d''Arco do Piauí','PI'),
@@ -3482,7 +3482,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Picos','PI'),
 	 ('Pimenteiras','PI'),
 	 ('Pio IX','PI');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Piracuruca','PI'),
 	 ('Piripiri','PI'),
 	 ('Porto','PI'),
@@ -3493,7 +3493,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Regeneração','PI'),
 	 ('Riacho Frio','PI'),
 	 ('Ribeira do Piauí','PI');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Ribeiro Gonçalves','PI'),
 	 ('Rio Grande do Piauí','PI'),
 	 ('Santa Cruz do Piauí','PI'),
@@ -3504,7 +3504,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Santana do Piauí','PI'),
 	 ('Santo Antônio de Lisboa','PI'),
 	 ('Santo Antônio dos Milagres','PI');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Santo Inácio do Piauí','PI'),
 	 ('São Braz do Piauí','PI'),
 	 ('São Félix do Piauí','PI'),
@@ -3515,7 +3515,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('São João da Canabrava','PI'),
 	 ('São João da Fronteira','PI'),
 	 ('São João da Serra','PI');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('São João da Varjota','PI'),
 	 ('São João do Arraial','PI'),
 	 ('São João do Piauí','PI'),
@@ -3526,7 +3526,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('São Lourenço do Piauí','PI'),
 	 ('São Luis do Piauí','PI'),
 	 ('São Miguel da Baixa Grande','PI');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('São Miguel do Fidalgo','PI'),
 	 ('São Miguel do Tapuio','PI'),
 	 ('São Pedro do Piauí','PI'),
@@ -3537,7 +3537,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Simões','PI'),
 	 ('Simplício Mendes','PI'),
 	 ('Socorro do Piauí','PI');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Sussuapara','PI'),
 	 ('Tamboril do Piauí','PI'),
 	 ('Tanque do Piauí','PI'),
@@ -3548,7 +3548,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Várzea Branca','PI'),
 	 ('Várzea Grande','PI'),
 	 ('Vera Mendes','PI');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Vila Nova do Piauí','PI'),
 	 ('Wall Ferraz','PI'),
 	 ('Abatiá','PR'),
@@ -3559,7 +3559,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Alto Paraná','PR'),
 	 ('Alto Piquiri','PR'),
 	 ('Altônia','PR');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Alvorada do Sul','PR'),
 	 ('Amaporã','PR'),
 	 ('Ampére','PR'),
@@ -3570,7 +3570,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Antônio Olinto','PR'),
 	 ('Apucarana','PR'),
 	 ('Arapongas','PR');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Arapoti','PR'),
 	 ('Arapuã','PR'),
 	 ('Araruna','PR'),
@@ -3581,7 +3581,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Astorga','PR'),
 	 ('Atalaia','PR'),
 	 ('Balsa Nova','PR');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Bandeirantes','PR'),
 	 ('Barbosa Ferraz','PR'),
 	 ('Barra do Jacaré','PR'),
@@ -3592,7 +3592,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Boa Esperança','PR'),
 	 ('Boa Esperança do Iguaçu','PR'),
 	 ('Boa Ventura de São Roque','PR');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Boa Vista da Aparecida','PR'),
 	 ('Bocaiúva do Sul','PR'),
 	 ('Bom Jesus do Sul','PR'),
@@ -3603,7 +3603,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Brasilândia do Sul','PR'),
 	 ('Cafeara','PR'),
 	 ('Cafelândia','PR');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Cafezal do Sul','PR'),
 	 ('Califórnia','PR'),
 	 ('Cambará','PR'),
@@ -3614,7 +3614,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Campina Grande do Sul','PR'),
 	 ('Campo Bonito','PR'),
 	 ('Campo do Tenente','PR');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Campo Largo','PR'),
 	 ('Campo Magro','PR'),
 	 ('Campo Mourão','PR'),
@@ -3625,7 +3625,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Capitão Leônidas Marques','PR'),
 	 ('Carambeí','PR'),
 	 ('Carlópolis','PR');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Cascavel','PR'),
 	 ('Castro','PR'),
 	 ('Catanduvas','PR'),
@@ -3636,7 +3636,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Cianorte','PR'),
 	 ('Cidade Gaúcha','PR'),
 	 ('Clevelândia','PR');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Colombo','PR'),
 	 ('Colorado','PR'),
 	 ('Congonhinhas','PR'),
@@ -3647,7 +3647,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Coronel Domingos Soares','PR'),
 	 ('Coronel Vivida','PR'),
 	 ('Corumbataí do Sul','PR');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Cruz Machado','PR'),
 	 ('Cruzeiro do Iguaçu','PR'),
 	 ('Cruzeiro do Oeste','PR'),
@@ -3658,7 +3658,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Diamante d''Oeste','PR'),
 	 ('Diamante do Norte','PR'),
 	 ('Diamante do Sul','PR');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Dois Vizinhos','PR'),
 	 ('Douradina','PR'),
 	 ('Doutor Camargo','PR'),
@@ -3669,7 +3669,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Esperança Nova','PR'),
 	 ('Espigão Alto do Iguaçu','PR'),
 	 ('Farol','PR');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Faxinal','PR'),
 	 ('Fazenda Rio Grande','PR'),
 	 ('Fênix','PR'),
@@ -3680,7 +3680,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Floresta','PR'),
 	 ('Florestópolis','PR'),
 	 ('Flórida','PR');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Formosa do Oeste','PR'),
 	 ('Foz do Iguaçu','PR'),
 	 ('Foz do Jordão','PR'),
@@ -3691,7 +3691,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Goioerê','PR'),
 	 ('Goioxim','PR'),
 	 ('Grandes Rios','PR');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Guaíra','PR'),
 	 ('Guairaçá','PR'),
 	 ('Guamiranga','PR'),
@@ -3702,7 +3702,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Guarapuava','PR'),
 	 ('Guaraqueçaba','PR'),
 	 ('Guaratuba','PR');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Honório Serpa','PR'),
 	 ('Ibaiti','PR'),
 	 ('Ibema','PR'),
@@ -3713,7 +3713,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Imbaú','PR'),
 	 ('Imbituva','PR'),
 	 ('Inácio Martins','PR');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Inajá','PR'),
 	 ('Indianópolis','PR'),
 	 ('Ipiranga','PR'),
@@ -3724,7 +3724,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Itaguajé','PR'),
 	 ('Itaipulândia','PR'),
 	 ('Itambaracá','PR');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Itambé','PR'),
 	 ('Itapejara d''Oeste','PR'),
 	 ('Itaperuçu','PR'),
@@ -3735,7 +3735,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Ivatuba','PR'),
 	 ('Jaboti','PR'),
 	 ('Jacarezinho','PR');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Jaguapitã','PR'),
 	 ('Jaguariaíva','PR'),
 	 ('Jandaia do Sul','PR'),
@@ -3746,7 +3746,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Jardim Olinda','PR'),
 	 ('Jataizinho','PR'),
 	 ('Jesuítas','PR');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Joaquim Távora','PR'),
 	 ('Jundiaí do Sul','PR'),
 	 ('Juranda','PR'),
@@ -3757,7 +3757,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Laranjeiras do Sul','PR'),
 	 ('Leópolis','PR'),
 	 ('Lidianópolis','PR');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Lindoeste','PR'),
 	 ('Loanda','PR'),
 	 ('Lobato','PR'),
@@ -3768,7 +3768,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Mallet','PR'),
 	 ('Mamborê','PR'),
 	 ('Mandaguaçu','PR');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Mandaguari','PR'),
 	 ('Mandirituba','PR'),
 	 ('Manfrinópolis','PR'),
@@ -3779,7 +3779,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Marialva','PR'),
 	 ('Marilândia do Sul','PR'),
 	 ('Marilena','PR');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Mariluz','PR'),
 	 ('Maringá','PR'),
 	 ('Mariópolis','PR'),
@@ -3790,7 +3790,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Matelândia','PR'),
 	 ('Matinhos','PR'),
 	 ('Mato Rico','PR');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Mauá da Serra','PR'),
 	 ('Medianeira','PR'),
 	 ('Mercedes','PR'),
@@ -3801,7 +3801,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Morretes','PR'),
 	 ('Munhoz de Melo','PR'),
 	 ('Nossa Senhora das Graças','PR');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Nova Aliança do Ivaí','PR'),
 	 ('Nova América da Colina','PR'),
 	 ('Nova Aurora','PR'),
@@ -3812,7 +3812,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Nova Laranjeiras','PR'),
 	 ('Nova Londrina','PR'),
 	 ('Nova Olímpia','PR');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Nova Prata do Iguaçu','PR'),
 	 ('Nova Santa Bárbara','PR'),
 	 ('Nova Santa Rosa','PR'),
@@ -3823,7 +3823,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Ouro Verde do Oeste','PR'),
 	 ('Paiçandu','PR'),
 	 ('Palmas','PR');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Palmeira','PR'),
 	 ('Palmital','PR'),
 	 ('Palotina','PR'),
@@ -3834,7 +3834,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Paranavaí','PR'),
 	 ('Pato Bragado','PR'),
 	 ('Pato Branco','PR');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Paula Freitas','PR'),
 	 ('Paulo Frontin','PR'),
 	 ('Peabiru','PR'),
@@ -3845,7 +3845,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Pinhais','PR'),
 	 ('Pinhal de São Bento','PR'),
 	 ('Pinhalão','PR');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Pinhão','PR'),
 	 ('Piraí do Sul','PR'),
 	 ('Piraquara','PR'),
@@ -3856,7 +3856,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Ponta Grossa','PR'),
 	 ('Pontal do Paraná','PR'),
 	 ('Porecatu','PR');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Porto Amazonas','PR'),
 	 ('Porto Barreiro','PR'),
 	 ('Porto Rico','PR'),
@@ -3867,7 +3867,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Primeiro de Maio','PR'),
 	 ('Prudentópolis','PR'),
 	 ('Quarto Centenário','PR');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Quatiguá','PR'),
 	 ('Quatro Barras','PR'),
 	 ('Quatro Pontes','PR'),
@@ -3878,7 +3878,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Ramilândia','PR'),
 	 ('Rancho Alegre','PR'),
 	 ('Rancho Alegre d''Oeste','PR');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Realeza','PR'),
 	 ('Rebouças','PR'),
 	 ('Renascença','PR'),
@@ -3889,7 +3889,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Rio Azul','PR'),
 	 ('Rio Bom','PR'),
 	 ('Rio Bonito do Iguaçu','PR');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Rio Branco do Ivaí','PR'),
 	 ('Rio Branco do Sul','PR'),
 	 ('Rio Negro','PR'),
@@ -3900,7 +3900,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Sabáudia','PR'),
 	 ('Salgado Filho','PR'),
 	 ('Salto do Itararé','PR');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Salto do Lontra','PR'),
 	 ('Santa Amélia','PR'),
 	 ('Santa Cecília do Pavão','PR'),
@@ -3911,7 +3911,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Santa Isabel do Ivaí','PR'),
 	 ('Santa Izabel do Oeste','PR'),
 	 ('Santa Lúcia','PR');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Santa Maria do Oeste','PR'),
 	 ('Santa Mariana','PR'),
 	 ('Santa Mônica','PR'),
@@ -3922,7 +3922,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Santo Antônio do Caiuá','PR'),
 	 ('Santo Antônio do Paraíso','PR'),
 	 ('Santo Antônio do Sudoeste','PR');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Santo Inácio','PR'),
 	 ('São Carlos do Ivaí','PR'),
 	 ('São Jerônimo da Serra','PR'),
@@ -3933,7 +3933,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('São Jorge d''Oeste','PR'),
 	 ('São Jorge do Ivaí','PR'),
 	 ('São Jorge do Patrocínio','PR');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('São José da Boa Vista','PR'),
 	 ('São José das Palmeiras','PR'),
 	 ('São José dos Pinhais','PR'),
@@ -3944,7 +3944,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('São Pedro do Ivaí','PR'),
 	 ('São Pedro do Paraná','PR'),
 	 ('São Sebastião da Amoreira','PR');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('São Tomé','PR'),
 	 ('Sapopema','PR'),
 	 ('Sarandi','PR'),
@@ -3955,7 +3955,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Sertanópolis','PR'),
 	 ('Siqueira Campos','PR'),
 	 ('Sulina','PR');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Tamarana','PR'),
 	 ('Tamboara','PR'),
 	 ('Tapejara','PR'),
@@ -3966,7 +3966,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Terra Rica','PR'),
 	 ('Terra Roxa','PR'),
 	 ('Tibagi','PR');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Tijucas do Sul','PR'),
 	 ('Toledo','PR'),
 	 ('Tomazina','PR'),
@@ -3977,7 +3977,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Turvo','PR'),
 	 ('Ubiratã','PR'),
 	 ('Umuarama','PR');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('União da Vitória','PR'),
 	 ('Uniflor','PR'),
 	 ('Uraí','PR'),
@@ -3988,7 +3988,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Virmond','PR'),
 	 ('Vitorino','PR'),
 	 ('Wenceslau Braz','PR');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Xambrê','PR'),
 	 ('Angra dos Reis','RJ'),
 	 ('Aperibé','RJ'),
@@ -3999,7 +3999,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Barra do Piraí','RJ'),
 	 ('Barra Mansa','RJ'),
 	 ('Belford Roxo','RJ');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Bom Jardim','RJ'),
 	 ('Bom Jesus do Itabapoana','RJ'),
 	 ('Cabo Frio','RJ'),
@@ -4010,7 +4010,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Carapebus','RJ'),
 	 ('Cardoso Moreira','RJ'),
 	 ('Carmo','RJ');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Casimiro de Abreu','RJ'),
 	 ('Comendador Levy Gasparian','RJ'),
 	 ('Conceição de Macabu','RJ'),
@@ -4021,7 +4021,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Guapimirim','RJ'),
 	 ('Iguaba Grande','RJ'),
 	 ('Itaboraí','RJ');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Itaguaí','RJ'),
 	 ('Italva','RJ'),
 	 ('Itaocara','RJ'),
@@ -4032,7 +4032,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Macaé','RJ'),
 	 ('Macuco','RJ'),
 	 ('Magé','RJ');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Mangaratiba','RJ'),
 	 ('Maricá','RJ'),
 	 ('Mendes','RJ'),
@@ -4043,7 +4043,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Nilópolis','RJ'),
 	 ('Niterói','RJ'),
 	 ('Nova Friburgo','RJ');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Nova Iguaçu','RJ'),
 	 ('Paracambi','RJ'),
 	 ('Paraíba do Sul','RJ'),
@@ -4054,7 +4054,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Piraí','RJ'),
 	 ('Porciúncula','RJ'),
 	 ('Porto Real','RJ');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Quatis','RJ'),
 	 ('Queimados','RJ'),
 	 ('Quissamã','RJ'),
@@ -4065,7 +4065,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Rio das Ostras','RJ'),
 	 ('Rio de Janeiro','RJ'),
 	 ('Santa Maria Madalena','RJ');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Santo Antônio de Pádua','RJ'),
 	 ('São Fidélis','RJ'),
 	 ('São Francisco de Itabapoana','RJ'),
@@ -4076,7 +4076,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('São José do Vale do Rio Preto','RJ'),
 	 ('São Pedro da Aldeia','RJ'),
 	 ('São Sebastião do Alto','RJ');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Sapucaia','RJ'),
 	 ('Saquarema','RJ'),
 	 ('Seropédica','RJ'),
@@ -4087,7 +4087,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Trajano de Morais','RJ'),
 	 ('Três Rios','RJ'),
 	 ('Valença','RJ');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Varre-Sai','RJ'),
 	 ('Vassouras','RJ'),
 	 ('Volta Redonda','RJ'),
@@ -4098,7 +4098,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Alexandria','RN'),
 	 ('Almino Afonso','RN'),
 	 ('Alto do Rodrigues','RN');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Angicos','RN'),
 	 ('Antônio Martins','RN'),
 	 ('Apodi','RN'),
@@ -4109,7 +4109,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Baraúna','RN'),
 	 ('Barcelona','RN'),
 	 ('Bento Fernandes','RN');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Bodó','RN'),
 	 ('Bom Jesus','RN'),
 	 ('Brejinho','RN'),
@@ -4120,7 +4120,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Canguaretama','RN'),
 	 ('Caraúbas','RN'),
 	 ('Carnaúba dos Dantas','RN');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Carnaubais','RN'),
 	 ('Ceará-Mirim','RN'),
 	 ('Cerro Corá','RN'),
@@ -4131,7 +4131,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Doutor Severiano','RN'),
 	 ('Encanto','RN'),
 	 ('Equador','RN');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Espírito Santo','RN'),
 	 ('Extremoz','RN'),
 	 ('Felipe Guerra','RN'),
@@ -4142,7 +4142,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Galinhos','RN'),
 	 ('Goianinha','RN'),
 	 ('Governador Dix-Sept Rosado','RN');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Grossos','RN'),
 	 ('Guamaré','RN'),
 	 ('Ielmo Marinho','RN'),
@@ -4153,7 +4153,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Jaçanã','RN'),
 	 ('Jandaíra','RN'),
 	 ('Janduís','RN');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Januário Cicco','RN'),
 	 ('Japi','RN'),
 	 ('Jardim de Angicos','RN'),
@@ -4164,7 +4164,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('José da Penha','RN'),
 	 ('Jucurutu','RN'),
 	 ('Jundiá','RN');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Lagoa d''Anta','RN'),
 	 ('Lagoa de Pedras','RN'),
 	 ('Lagoa de Velhos','RN'),
@@ -4175,7 +4175,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Lucrécia','RN'),
 	 ('Luís Gomes','RN'),
 	 ('Macaíba','RN');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Macau','RN'),
 	 ('Major Sales','RN'),
 	 ('Marcelino Vieira','RN'),
@@ -4186,7 +4186,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Monte Alegre','RN'),
 	 ('Monte das Gameleiras','RN'),
 	 ('Mossoró','RN');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Natal','RN'),
 	 ('Nísia Floresta','RN'),
 	 ('Nova Cruz','RN'),
@@ -4197,7 +4197,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Parazinho','RN'),
 	 ('Parelhas','RN'),
 	 ('Parnamirim','RN');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Passa e Fica','RN'),
 	 ('Passagem','RN'),
 	 ('Patu','RN'),
@@ -4208,7 +4208,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Pedro Velho','RN'),
 	 ('Pendências','RN'),
 	 ('Pilões','RN');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Poço Branco','RN'),
 	 ('Portalegre','RN'),
 	 ('Porto do Mangue','RN'),
@@ -4219,7 +4219,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Riacho da Cruz','RN'),
 	 ('Riacho de Santana','RN'),
 	 ('Riachuelo','RN');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Rio do Fogo','RN'),
 	 ('Rodolfo Fernandes','RN'),
 	 ('Ruy Barbosa','RN'),
@@ -4230,7 +4230,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Santo Antônio','RN'),
 	 ('São Bento do Norte','RN'),
 	 ('São Bento do Trairí','RN');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('São Fernando','RN'),
 	 ('São Francisco do Oeste','RN'),
 	 ('São Gonçalo do Amarante','RN'),
@@ -4241,7 +4241,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('São Miguel','RN'),
 	 ('São Miguel de Touros','RN'),
 	 ('São Paulo do Potengi','RN');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('São Pedro','RN'),
 	 ('São Rafael','RN'),
 	 ('São Tomé','RN'),
@@ -4252,7 +4252,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Serra do Mel','RN'),
 	 ('Serra Negra do Norte','RN'),
 	 ('Serrinha','RN');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Serrinha dos Pintos','RN'),
 	 ('Severiano Melo','RN'),
 	 ('Sítio Novo','RN'),
@@ -4263,7 +4263,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Tenente Laurentino Cruz','RN'),
 	 ('Tibau','RN'),
 	 ('Tibau do Sul','RN');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Timbaúba dos Batistas','RN'),
 	 ('Touros','RN'),
 	 ('Triunfo Potiguar','RN'),
@@ -4274,7 +4274,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Vera Cruz','RN'),
 	 ('Viçosa','RN'),
 	 ('Vila Flor','RN');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Alta Floresta d''Oeste','RO'),
 	 ('Alto Alegre do Parecis','RO'),
 	 ('Alto Paraíso','RO'),
@@ -4285,7 +4285,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Cacaulândia','RO'),
 	 ('Cacoal','RO'),
 	 ('Campo Novo de Rondônia','RO');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Candeias do Jamari','RO'),
 	 ('Castanheiras','RO'),
 	 ('Cerejeiras','RO'),
@@ -4296,7 +4296,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Cujubim','RO'),
 	 ('Espigão d''Oeste','RO'),
 	 ('Governador Jorge Teixeira','RO');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Guajará-Mirim','RO'),
 	 ('Itapuã do Oeste','RO'),
 	 ('Jaru','RO'),
@@ -4307,7 +4307,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Monte Negro','RO'),
 	 ('Nova Brasilândia d''Oeste','RO'),
 	 ('Nova Mamoré','RO');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Nova União','RO'),
 	 ('Novo Horizonte do Oeste','RO'),
 	 ('Ouro Preto do Oeste','RO'),
@@ -4318,7 +4318,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Presidente Médici','RO'),
 	 ('Primavera de Rondônia','RO'),
 	 ('Rio Crespo','RO');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Rolim de Moura','RO'),
 	 ('Santa Luzia d''Oeste','RO'),
 	 ('São Felipe d''Oeste','RO'),
@@ -4329,7 +4329,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Theobroma','RO'),
 	 ('Urupá','RO'),
 	 ('Vale do Anari','RO');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Vale do Paraíso','RO'),
 	 ('Vilhena','RO'),
 	 ('Alto Alegre','RR'),
@@ -4340,7 +4340,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Caracaraí','RR'),
 	 ('Caroebe','RR'),
 	 ('Iracema','RR');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Mucajaí','RR'),
 	 ('Normandia','RR'),
 	 ('Pacaraima','RR'),
@@ -4351,7 +4351,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Aceguá','RS'),
 	 ('Água Santa','RS'),
 	 ('Agudo','RS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Ajuricaba','RS'),
 	 ('Alecrim','RS'),
 	 ('Alegrete','RS'),
@@ -4362,7 +4362,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Alto Feliz','RS'),
 	 ('Alvorada','RS'),
 	 ('Amaral Ferrador','RS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Ametista do Sul','RS'),
 	 ('André da Rocha','RS'),
 	 ('Anta Gorda','RS'),
@@ -4373,7 +4373,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Arroio do Meio','RS'),
 	 ('Arroio do Padre','RS'),
 	 ('Arroio do Sal','RS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Arroio do Tigre','RS'),
 	 ('Arroio dos Ratos','RS'),
 	 ('Arroio Grande','RS'),
@@ -4384,7 +4384,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Balneário Pinhal','RS'),
 	 ('Barão','RS'),
 	 ('Barão de Cotegipe','RS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Barão do Triunfo','RS'),
 	 ('Barra do Guarita','RS'),
 	 ('Barra do Quaraí','RS'),
@@ -4395,7 +4395,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Barros Cassal','RS'),
 	 ('Benjamin Constan do Sul','RS'),
 	 ('Bento Gonçalves','RS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Boa Vista das Missões','RS'),
 	 ('Boa Vista do Buricá','RS'),
 	 ('Boa Vista do Cadeado','RS'),
@@ -4406,7 +4406,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Bom Progresso','RS'),
 	 ('Bom Retiro do Sul','RS'),
 	 ('Boqueirão do Leão','RS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Bossoroca','RS'),
 	 ('Bozano','RS'),
 	 ('Braga','RS'),
@@ -4417,7 +4417,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Cachoeira do Sul','RS'),
 	 ('Cachoeirinha','RS'),
 	 ('Cacique Doble','RS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Caibaté','RS'),
 	 ('Caiçara','RS'),
 	 ('Camaquã','RS'),
@@ -4428,7 +4428,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Campinas do Sul','RS'),
 	 ('Campo Bom','RS'),
 	 ('Campo Novo','RS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Campos Borges','RS'),
 	 ('Candelária','RS'),
 	 ('Cândido Godói','RS'),
@@ -4439,7 +4439,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Canudos do Vale','RS'),
 	 ('Capão Bonito do Sul','RS'),
 	 ('Capão da Canoa','RS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Capão do Cipó','RS'),
 	 ('Capão do Leão','RS'),
 	 ('Capela de Santana','RS'),
@@ -4450,7 +4450,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Carlos Barbosa','RS'),
 	 ('Carlos Gomes','RS'),
 	 ('Casca','RS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Caseiros','RS'),
 	 ('Catuípe','RS'),
 	 ('Caxias do Sul','RS'),
@@ -4461,7 +4461,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Cerro Grande do Sul','RS'),
 	 ('Cerro Largo','RS'),
 	 ('Chapada','RS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Charqueadas','RS'),
 	 ('Charrua','RS'),
 	 ('Chiapeta','RS'),
@@ -4472,7 +4472,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Colinas','RS'),
 	 ('Colorado','RS'),
 	 ('Condor','RS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Constantina','RS'),
 	 ('Coqueiro Baixo','RS'),
 	 ('Coqueiros do Sul','RS'),
@@ -4483,7 +4483,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Coxilha','RS'),
 	 ('Crissiumal','RS'),
 	 ('Cristal','RS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Cristal do Sul','RS'),
 	 ('Cruz Alta','RS'),
 	 ('Cruzaltense','RS'),
@@ -4494,7 +4494,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Dilermando de Aguiar','RS'),
 	 ('Dois Irmãos','RS'),
 	 ('Dois Irmãos das Missões','RS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Dois Lajeados','RS'),
 	 ('Dom Feliciano','RS'),
 	 ('Dom Pedrito','RS'),
@@ -4505,7 +4505,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Eldorado do Sul','RS'),
 	 ('Encantado','RS'),
 	 ('Encruzilhada do Sul','RS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Engenho Velho','RS'),
 	 ('Entre Rios do Sul','RS'),
 	 ('Entre-Ijuís','RS'),
@@ -4516,7 +4516,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Erval Seco','RS'),
 	 ('Esmeralda','RS'),
 	 ('Esperança do Sul','RS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Espumoso','RS'),
 	 ('Estação','RS'),
 	 ('Estância Velha','RS'),
@@ -4527,7 +4527,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Fagundes Varela','RS'),
 	 ('Farroupilha','RS'),
 	 ('Faxinal do Soturno','RS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Faxinalzinho','RS'),
 	 ('Fazenda Vilanova','RS'),
 	 ('Feliz','RS'),
@@ -4538,7 +4538,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Forquetinha','RS'),
 	 ('Fortaleza dos Valos','RS'),
 	 ('Frederico Westphalen','RS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Garibaldi','RS'),
 	 ('Garruchos','RS'),
 	 ('Gaurama','RS'),
@@ -4549,7 +4549,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Glorinha','RS'),
 	 ('Gramado','RS'),
 	 ('Gramado dos Loureiros','RS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Gramado Xavier','RS'),
 	 ('Gravataí','RS'),
 	 ('Guabiju','RS'),
@@ -4560,7 +4560,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Herval','RS'),
 	 ('Herveiras','RS'),
 	 ('Horizontina','RS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Hulha Negra','RS'),
 	 ('Humaitá','RS'),
 	 ('Ibarama','RS'),
@@ -4571,7 +4571,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Igrejinha','RS'),
 	 ('Ijuí','RS'),
 	 ('Ilópolis','RS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Imbé','RS'),
 	 ('Imigrante','RS'),
 	 ('Independência','RS'),
@@ -4582,7 +4582,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Itaara','RS'),
 	 ('Itacurubi','RS'),
 	 ('Itapuca','RS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Itaqui','RS'),
 	 ('Itati','RS'),
 	 ('Itatiba do Sul','RS'),
@@ -4593,7 +4593,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Jacutinga','RS'),
 	 ('Jaguarão','RS'),
 	 ('Jaguari','RS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Jaquirana','RS'),
 	 ('Jari','RS'),
 	 ('Jóia','RS'),
@@ -4604,7 +4604,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Lagoão','RS'),
 	 ('Lajeado','RS'),
 	 ('Lajeado do Bugre','RS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Lavras do Sul','RS'),
 	 ('Liberato Salzano','RS'),
 	 ('Lindolfo Collor','RS'),
@@ -4615,7 +4615,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Manoel Viana','RS'),
 	 ('Maquiné','RS'),
 	 ('Maratá','RS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Marau','RS'),
 	 ('Marcelino Ramos','RS'),
 	 ('Mariana Pimentel','RS'),
@@ -4626,7 +4626,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Mato Leitão','RS'),
 	 ('Mato Queimado','RS'),
 	 ('Maximiliano de Almeida','RS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Minas do Leão','RS'),
 	 ('Miraguaí','RS'),
 	 ('Montauri','RS'),
@@ -4637,7 +4637,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Morrinhos do Sul','RS'),
 	 ('Morro Redondo','RS'),
 	 ('Morro Reuter','RS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Mostardas','RS'),
 	 ('Muçum','RS'),
 	 ('Muitos Capões','RS'),
@@ -4648,7 +4648,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Nova Alvorada','RS'),
 	 ('Nova Araçá','RS'),
 	 ('Nova Bassano','RS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Nova Boa Vista','RS'),
 	 ('Nova Bréscia','RS'),
 	 ('Nova Candelária','RS'),
@@ -4659,7 +4659,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Nova Petrópolis','RS'),
 	 ('Nova Prata','RS'),
 	 ('Nova Ramada','RS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Nova Roma do Sul','RS'),
 	 ('Nova Santa Rita','RS'),
 	 ('Novo Barreiro','RS'),
@@ -4670,7 +4670,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Novo Xingu','RS'),
 	 ('Osório','RS'),
 	 ('Paim Filho','RS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Palmares do Sul','RS'),
 	 ('Palmeira das Missões','RS'),
 	 ('Palmitinho','RS'),
@@ -4681,7 +4681,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Pareci Novo','RS'),
 	 ('Parobé','RS'),
 	 ('Passa Sete','RS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Passo do Sobrado','RS'),
 	 ('Passo Fundo','RS'),
 	 ('Paulo Bento','RS'),
@@ -4692,7 +4692,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Pelotas','RS'),
 	 ('Picada Café','RS'),
 	 ('Pinhal','RS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Pinhal da Serra','RS'),
 	 ('Pinhal Grande','RS'),
 	 ('Pinheirinho do Vale','RS'),
@@ -4703,7 +4703,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Poço das Antas','RS'),
 	 ('Pontão','RS'),
 	 ('Ponte Preta','RS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Portão','RS'),
 	 ('Porto Alegre','RS'),
 	 ('Porto Lucena','RS'),
@@ -4714,7 +4714,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Presidente Lucena','RS'),
 	 ('Progresso','RS'),
 	 ('Protásio Alves','RS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Putinga','RS'),
 	 ('Quaraí','RS'),
 	 ('Quatro Irmãos','RS'),
@@ -4725,7 +4725,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Restinga Seca','RS'),
 	 ('Rio dos Índios','RS'),
 	 ('Rio Grande','RS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Rio Pardo','RS'),
 	 ('Riozinho','RS'),
 	 ('Roca Sales','RS'),
@@ -4736,7 +4736,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Rondinha','RS'),
 	 ('Roque Gonzales','RS'),
 	 ('Rosário do Sul','RS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Sagrada Família','RS'),
 	 ('Saldanha Marinho','RS'),
 	 ('Salto do Jacuí','RS'),
@@ -4747,7 +4747,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Santa Cecília do Sul','RS'),
 	 ('Santa Clara do Sul','RS'),
 	 ('Santa Cruz do Sul','RS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Santa Margarida do Sul','RS'),
 	 ('Santa Maria','RS'),
 	 ('Santa Maria do Herval','RS'),
@@ -4758,7 +4758,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Santana do Livramento','RS'),
 	 ('Santiago','RS'),
 	 ('Santo Ângelo','RS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Santo Antônio da Patrulha','RS'),
 	 ('Santo Antônio das Missões','RS'),
 	 ('Santo Antônio do Palma','RS'),
@@ -4769,7 +4769,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('São Borja','RS'),
 	 ('São Domingos do Sul','RS'),
 	 ('São Francisco de Assis','RS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('São Francisco de Paula','RS'),
 	 ('São Gabriel','RS'),
 	 ('São Jerônimo','RS'),
@@ -4780,7 +4780,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('São José do Herval','RS'),
 	 ('São José do Hortêncio','RS'),
 	 ('São José do Inhacorá','RS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('São José do Norte','RS'),
 	 ('São José do Ouro','RS'),
 	 ('São José do Sul','RS'),
@@ -4791,7 +4791,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('São Marcos','RS'),
 	 ('São Martinho','RS'),
 	 ('São Martinho da Serra','RS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('São Miguel das Missões','RS'),
 	 ('São Nicolau','RS'),
 	 ('São Paulo das Missões','RS'),
@@ -4802,7 +4802,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('São Sebastião do Caí','RS'),
 	 ('São Sepé','RS'),
 	 ('São Valentim','RS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('São Valentim do Sul','RS'),
 	 ('São Valério do Sul','RS'),
 	 ('São Vendelino','RS'),
@@ -4813,7 +4813,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Seberi','RS'),
 	 ('Sede Nova','RS'),
 	 ('Segredo','RS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Selbach','RS'),
 	 ('Senador Salgado Filho','RS'),
 	 ('Sentinela do Sul','RS'),
@@ -4824,7 +4824,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Sete de Setembro','RS'),
 	 ('Severiano de Almeida','RS'),
 	 ('Silveira Martins','RS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Sinimbu','RS'),
 	 ('Sobradinho','RS'),
 	 ('Soledade','RS'),
@@ -4835,7 +4835,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Taquara','RS'),
 	 ('Taquari','RS'),
 	 ('Taquaruçu do Sul','RS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Tavares','RS'),
 	 ('Tenente Portela','RS'),
 	 ('Terra de Areia','RS'),
@@ -4846,7 +4846,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Torres','RS'),
 	 ('Tramandaí','RS'),
 	 ('Travesseiro','RS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Três Arroios','RS'),
 	 ('Três Cachoeiras','RS'),
 	 ('Três Coroas','RS'),
@@ -4857,7 +4857,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Trindade do Sul','RS'),
 	 ('Triunfo','RS'),
 	 ('Tucunduva','RS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Tunas','RS'),
 	 ('Tupanci do Sul','RS'),
 	 ('Tupanciretã','RS'),
@@ -4868,7 +4868,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('União da Serra','RS'),
 	 ('Unistalda','RS'),
 	 ('Uruguaiana','RS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Vacaria','RS'),
 	 ('Vale do Sol','RS'),
 	 ('Vale Real','RS'),
@@ -4879,7 +4879,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Veranópolis','RS'),
 	 ('Vespasiano Correa','RS'),
 	 ('Viadutos','RS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Viamão','RS'),
 	 ('Vicente Dutra','RS'),
 	 ('Victor Graeff','RS'),
@@ -4890,7 +4890,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Vista Alegre','RS'),
 	 ('Vista Alegre do Prata','RS'),
 	 ('Vista Gaúcha','RS');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Vitória das Missões','RS'),
 	 ('Westfália','RS'),
 	 ('Xangri-lá','RS'),
@@ -4901,7 +4901,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Água Doce','SC'),
 	 ('Águas de Chapecó','SC'),
 	 ('Águas Frias','SC');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Águas Mornas','SC'),
 	 ('Alfredo Wagner','SC'),
 	 ('Alto Bela Vista','SC'),
@@ -4912,7 +4912,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Antônio Carlos','SC'),
 	 ('Apiúna','SC'),
 	 ('Arabutã','SC');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Araquari','SC'),
 	 ('Araranguá','SC'),
 	 ('Armazém','SC'),
@@ -4923,7 +4923,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Aurora','SC'),
 	 ('Balneário Arroio do Silva','SC'),
 	 ('Balneário Barra do Sul','SC');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Balneário Camboriú','SC'),
 	 ('Balneário Gaivota','SC'),
 	 ('Bandeirante','SC'),
@@ -4934,7 +4934,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Benedito Novo','SC'),
 	 ('Biguaçu','SC'),
 	 ('Blumenau','SC');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Bocaina do Sul','SC'),
 	 ('Bom Jardim da Serra','SC'),
 	 ('Bom Jesus','SC'),
@@ -4945,7 +4945,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Braço do Norte','SC'),
 	 ('Braço do Trombudo','SC'),
 	 ('Brunópolis','SC');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Brusque','SC'),
 	 ('Caçador','SC'),
 	 ('Caibi','SC'),
@@ -4956,7 +4956,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Campo Erê','SC'),
 	 ('Campos Novos','SC'),
 	 ('Canelinha','SC');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Canoinhas','SC'),
 	 ('Capão Alto','SC'),
 	 ('Capinzal','SC'),
@@ -4967,7 +4967,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Cerro Negro','SC'),
 	 ('Chapadão do Lageado','SC'),
 	 ('Chapecó','SC');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Cocal do Sul','SC'),
 	 ('Concórdia','SC'),
 	 ('Cordilheira Alta','SC'),
@@ -4978,7 +4978,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Criciúma','SC'),
 	 ('Cunha Porã','SC'),
 	 ('Cunhataí','SC');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Curitibanos','SC'),
 	 ('Descanso','SC'),
 	 ('Dionísio Cerqueira','SC'),
@@ -4989,7 +4989,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Erval Velho','SC'),
 	 ('Faxinal dos Guedes','SC'),
 	 ('Flor do Sertão','SC');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Florianópolis','SC'),
 	 ('Formosa do Sul','SC'),
 	 ('Forquilhinha','SC'),
@@ -5000,7 +5000,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Garuva','SC'),
 	 ('Gaspar','SC'),
 	 ('Governador Celso Ramos','SC');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Grão Pará','SC'),
 	 ('Gravatal','SC'),
 	 ('Guabiruba','SC'),
@@ -5011,7 +5011,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Herval d''Oeste','SC'),
 	 ('Ibiam','SC'),
 	 ('Ibicaré','SC');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Ibirama','SC'),
 	 ('Içara','SC'),
 	 ('Ilhota','SC'),
@@ -5022,7 +5022,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Iomerê','SC'),
 	 ('Ipira','SC'),
 	 ('Iporã do Oeste','SC');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Ipuaçu','SC'),
 	 ('Ipumirim','SC'),
 	 ('Iraceminha','SC'),
@@ -5033,7 +5033,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Itaiópolis','SC'),
 	 ('Itajaí','SC'),
 	 ('Itapema','SC');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Itapiranga','SC'),
 	 ('Itapoá','SC'),
 	 ('Ituporanga','SC'),
@@ -5044,7 +5044,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Jardinópolis','SC'),
 	 ('Joaçaba','SC'),
 	 ('Joinville','SC');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('José Boiteux','SC'),
 	 ('Jupiá','SC'),
 	 ('Lacerdópolis','SC'),
@@ -5055,7 +5055,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Lauro Muller','SC'),
 	 ('Lebon Régis','SC'),
 	 ('Leoberto Leal','SC');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Lindóia do Sul','SC'),
 	 ('Lontras','SC'),
 	 ('Luiz Alves','SC'),
@@ -5066,7 +5066,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Major Vieira','SC'),
 	 ('Maracajá','SC'),
 	 ('Maravilha','SC');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Marema','SC'),
 	 ('Massaranduba','SC'),
 	 ('Matos Costa','SC'),
@@ -5077,7 +5077,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Monte Carlo','SC'),
 	 ('Monte Castelo','SC'),
 	 ('Morro da Fumaça','SC');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Morro Grande','SC'),
 	 ('Navegantes','SC'),
 	 ('Nova Erechim','SC'),
@@ -5088,7 +5088,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Orleans','SC'),
 	 ('Otacílio Costa','SC'),
 	 ('Ouro','SC');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Ouro Verde','SC'),
 	 ('Paial','SC'),
 	 ('Painel','SC'),
@@ -5099,7 +5099,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Papanduva','SC'),
 	 ('Paraíso','SC'),
 	 ('Passo de Torres','SC');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Passos Maia','SC'),
 	 ('Paulo Lopes','SC'),
 	 ('Pedras Grandes','SC'),
@@ -5110,7 +5110,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Pinhalzinho','SC'),
 	 ('Pinheiro Preto','SC'),
 	 ('Piratuba','SC');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Planalto Alegre','SC'),
 	 ('Pomerode','SC'),
 	 ('Ponte Alta','SC'),
@@ -5121,7 +5121,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Pouso Redondo','SC'),
 	 ('Praia Grande','SC'),
 	 ('Presidente Castelo Branco','SC');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Presidente Getúlio','SC'),
 	 ('Presidente Nereu','SC'),
 	 ('Princesa','SC'),
@@ -5132,7 +5132,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Rio do Oeste','SC'),
 	 ('Rio do Sul','SC'),
 	 ('Rio dos Cedros','SC');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Rio Fortuna','SC'),
 	 ('Rio Negrinho','SC'),
 	 ('Rio Rufino','SC'),
@@ -5143,7 +5143,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Saltinho','SC'),
 	 ('Salto Veloso','SC'),
 	 ('Sangão','SC');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Santa Cecília','SC'),
 	 ('Santa Helena','SC'),
 	 ('Santa Rosa de Lima','SC'),
@@ -5154,7 +5154,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Santo Amaro da Imperatriz','SC'),
 	 ('São Bento do Sul','SC'),
 	 ('São Bernardino','SC');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('São Bonifácio','SC'),
 	 ('São Carlos','SC'),
 	 ('São Cristovão do Sul','SC'),
@@ -5165,7 +5165,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('São João do Oeste','SC'),
 	 ('São João do Sul','SC'),
 	 ('São Joaquim','SC');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('São José','SC'),
 	 ('São José do Cedro','SC'),
 	 ('São José do Cerrito','SC'),
@@ -5176,7 +5176,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('São Miguel do Oeste','SC'),
 	 ('São Pedro de Alcântara','SC'),
 	 ('Saudades','SC');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Schroeder','SC'),
 	 ('Seara','SC'),
 	 ('Serra Alta','SC'),
@@ -5187,7 +5187,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Tangará','SC'),
 	 ('Tigrinhos','SC'),
 	 ('Tijucas','SC');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Timbé do Sul','SC'),
 	 ('Timbó','SC'),
 	 ('Timbó Grande','SC'),
@@ -5198,7 +5198,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Trombudo Central','SC'),
 	 ('Tubarão','SC'),
 	 ('Tunápolis','SC');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Turvo','SC'),
 	 ('União do Oeste','SC'),
 	 ('Urubici','SC'),
@@ -5209,7 +5209,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Vargem Bonita','SC'),
 	 ('Vidal Ramos','SC'),
 	 ('Videira','SC');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Vitor Meireles','SC'),
 	 ('Witmarsum','SC'),
 	 ('Xanxerê','SC'),
@@ -5220,7 +5220,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Aquidabã','SE'),
 	 ('Aracaju','SE'),
 	 ('Arauá','SE');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Areia Branca','SE'),
 	 ('Barra dos Coqueiros','SE'),
 	 ('Boquim','SE'),
@@ -5231,7 +5231,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Capela','SE'),
 	 ('Carira','SE'),
 	 ('Carmópolis','SE');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Cedro de São João','SE'),
 	 ('Cristinápolis','SE'),
 	 ('Cumbe','SE'),
@@ -5242,7 +5242,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Gararu','SE'),
 	 ('General Maynard','SE'),
 	 ('Gracho Cardoso','SE');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Ilha das Flores','SE'),
 	 ('Indiaroba','SE'),
 	 ('Itabaiana','SE'),
@@ -5253,7 +5253,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Japoatã','SE'),
 	 ('Lagarto','SE'),
 	 ('Laranjeiras','SE');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Macambira','SE'),
 	 ('Malhada dos Bois','SE'),
 	 ('Malhador','SE'),
@@ -5264,7 +5264,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Neópolis','SE'),
 	 ('Nossa Senhora Aparecida','SE'),
 	 ('Nossa Senhora da Glória','SE');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Nossa Senhora das Dores','SE'),
 	 ('Nossa Senhora de Lourdes','SE'),
 	 ('Nossa Senhora do Socorro','SE'),
@@ -5275,7 +5275,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Pirambu','SE'),
 	 ('Poço Redondo','SE'),
 	 ('Poço Verde','SE');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Porto da Folha','SE'),
 	 ('Propriá','SE'),
 	 ('Riachão do Dantas','SE'),
@@ -5286,7 +5286,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Santa Luzia do Itanhy','SE'),
 	 ('Santa Rosa de Lima','SE'),
 	 ('Santana do São Francisco','SE');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Santo Amaro das Brotas','SE'),
 	 ('São Cristóvão','SE'),
 	 ('São Domingos','SE'),
@@ -5297,7 +5297,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Telha','SE'),
 	 ('Tobias Barreto','SE'),
 	 ('Tomar do Geru','SE');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Umbaúba','SE'),
 	 ('Adamantina','SP'),
 	 ('Adolfo','SP'),
@@ -5308,7 +5308,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Águas de São Pedro','SP'),
 	 ('Agudos','SP'),
 	 ('Alambari','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Alfredo Marcondes','SP'),
 	 ('Altair','SP'),
 	 ('Altinópolis','SP'),
@@ -5319,7 +5319,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Álvaro de Carvalho','SP'),
 	 ('Alvinlândia','SP'),
 	 ('Americana','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Américo Brasiliense','SP'),
 	 ('Américo de Campos','SP'),
 	 ('Amparo','SP'),
@@ -5330,7 +5330,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Anhumas','SP'),
 	 ('Aparecida','SP'),
 	 ('Aparecida d''Oeste','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Apiaí','SP'),
 	 ('Araçariguama','SP'),
 	 ('Araçatuba','SP'),
@@ -5341,7 +5341,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Araraquara','SP'),
 	 ('Araras','SP'),
 	 ('Arco-Íris','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Arealva','SP'),
 	 ('Areias','SP'),
 	 ('Areiópolis','SP'),
@@ -5352,7 +5352,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Assis','SP'),
 	 ('Atibaia','SP'),
 	 ('Auriflama','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Avaí','SP'),
 	 ('Avanhandava','SP'),
 	 ('Avaré','SP'),
@@ -5363,7 +5363,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Barão de Antonina','SP'),
 	 ('Barbosa','SP'),
 	 ('Bariri','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Barra Bonita','SP'),
 	 ('Barra do Chapéu','SP'),
 	 ('Barra do Turvo','SP'),
@@ -5374,7 +5374,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Batatais','SP'),
 	 ('Bauru','SP'),
 	 ('Bebedouro','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Bento de Abreu','SP'),
 	 ('Bernardino de Campos','SP'),
 	 ('Bertioga','SP'),
@@ -5385,7 +5385,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Bocaina','SP'),
 	 ('Bofete','SP'),
 	 ('Boituva','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Bom Jesus dos Perdões','SP'),
 	 ('Bom Sucesso de Itararé','SP'),
 	 ('Borá','SP'),
@@ -5396,7 +5396,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Bragança Paulista','SP'),
 	 ('Braúna','SP'),
 	 ('Brejo Alegre','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Brodowski','SP'),
 	 ('Brotas','SP'),
 	 ('Buri','SP'),
@@ -5407,7 +5407,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Caçapava','SP'),
 	 ('Cachoeira Paulista','SP'),
 	 ('Caconde','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Cafelândia','SP'),
 	 ('Caiabu','SP'),
 	 ('Caieiras','SP'),
@@ -5418,7 +5418,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Cajuru','SP'),
 	 ('Campina do Monte Alegre','SP'),
 	 ('Campinas','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Campo Limpo Paulista','SP'),
 	 ('Campos do Jordão','SP'),
 	 ('Campos Novos Paulista','SP'),
@@ -5429,7 +5429,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Canitar','SP'),
 	 ('Capão Bonito','SP'),
 	 ('Capela do Alto','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Capivari','SP'),
 	 ('Caraguatatuba','SP'),
 	 ('Carapicuíba','SP'),
@@ -5440,7 +5440,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Catanduva','SP'),
 	 ('Catiguá','SP'),
 	 ('Cedral','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Cerqueira César','SP'),
 	 ('Cerquilho','SP'),
 	 ('Cesário Lange','SP'),
@@ -5451,7 +5451,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Colômbia','SP'),
 	 ('Conchal','SP'),
 	 ('Conchas','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Cordeirópolis','SP'),
 	 ('Coroados','SP'),
 	 ('Coronel Macedo','SP'),
@@ -5462,7 +5462,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Cravinhos','SP'),
 	 ('Cristais Paulista','SP'),
 	 ('Cruzália','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Cruzeiro','SP'),
 	 ('Cubatão','SP'),
 	 ('Cunha','SP'),
@@ -5473,7 +5473,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Dobrada','SP'),
 	 ('Dois Córregos','SP'),
 	 ('Dolcinópolis','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Dourado','SP'),
 	 ('Dracena','SP'),
 	 ('Duartina','SP'),
@@ -5484,7 +5484,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Elisiário','SP'),
 	 ('Embaúba','SP'),
 	 ('Embu','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Embu-Guaçu','SP'),
 	 ('Emilianópolis','SP'),
 	 ('Engenheiro Coelho','SP'),
@@ -5495,7 +5495,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Estrela do Norte','SP'),
 	 ('Euclides da Cunha Paulista','SP'),
 	 ('Fartura','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Fernando Prestes','SP'),
 	 ('Fernandópolis','SP'),
 	 ('Fernão','SP'),
@@ -5506,7 +5506,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Flórida Paulista','SP'),
 	 ('Franca','SP'),
 	 ('Francisco Morato','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Franco da Rocha','SP'),
 	 ('Gabriel Monteiro','SP'),
 	 ('Gália','SP'),
@@ -5517,7 +5517,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Getulina','SP'),
 	 ('Glicério','SP'),
 	 ('Guaiçara','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Guaimbê','SP'),
 	 ('Guaíra','SP'),
 	 ('Guapiaçu','SP'),
@@ -5528,7 +5528,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Guarani d''Oeste','SP'),
 	 ('Guarantã','SP'),
 	 ('Guararapes','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Guararema','SP'),
 	 ('Guaratinguetá','SP'),
 	 ('Guareí','SP'),
@@ -5539,7 +5539,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Guzolândia','SP'),
 	 ('Herculândia','SP'),
 	 ('Holambra','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Hortolândia','SP'),
 	 ('Iacanga','SP'),
 	 ('Iacri','SP'),
@@ -5550,7 +5550,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Ibitinga','SP'),
 	 ('Ibiúna','SP'),
 	 ('Icém','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Iepê','SP'),
 	 ('Igaraçu do Tietê','SP'),
 	 ('Igarapava','SP'),
@@ -5561,7 +5561,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Ilhabela','SP'),
 	 ('Indaiatuba','SP'),
 	 ('Indiana','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Indiaporã','SP'),
 	 ('Inúbia Paulista','SP'),
 	 ('Ipauçu','SP'),
@@ -5572,7 +5572,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Ipuã','SP'),
 	 ('Iracemápolis','SP'),
 	 ('Irapuã','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Irapuru','SP'),
 	 ('Itaberá','SP'),
 	 ('Itaí','SP'),
@@ -5583,7 +5583,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Itapecerica da Serra','SP'),
 	 ('Itapetininga','SP'),
 	 ('Itapeva','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Itapevi','SP'),
 	 ('Itapira','SP'),
 	 ('Itapirapuã Paulista','SP'),
@@ -5594,7 +5594,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Itaquaquecetuba','SP'),
 	 ('Itararé','SP'),
 	 ('Itariri','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Itatiba','SP'),
 	 ('Itatinga','SP'),
 	 ('Itirapina','SP'),
@@ -5605,7 +5605,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Ituverava','SP'),
 	 ('Jaborandi','SP'),
 	 ('Jaboticabal','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Jacareí','SP'),
 	 ('Jaci','SP'),
 	 ('Jacupiranga','SP'),
@@ -5616,7 +5616,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Jardinópolis','SP'),
 	 ('Jarinu','SP'),
 	 ('Jaú','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Jeriquara','SP'),
 	 ('Joanópolis','SP'),
 	 ('João Ramalho','SP'),
@@ -5627,7 +5627,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Junqueirópolis','SP'),
 	 ('Juquiá','SP'),
 	 ('Juquitiba','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Lagoinha','SP'),
 	 ('Laranjal Paulista','SP'),
 	 ('Lavínia','SP'),
@@ -5638,7 +5638,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Lindóia','SP'),
 	 ('Lins','SP'),
 	 ('Lorena','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Lourdes','SP'),
 	 ('Louveira','SP'),
 	 ('Lucélia','SP'),
@@ -5649,7 +5649,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Lutécia','SP'),
 	 ('Macatuba','SP'),
 	 ('Macaubal','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Macedônia','SP'),
 	 ('Magda','SP'),
 	 ('Mairinque','SP'),
@@ -5660,7 +5660,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Marapoama','SP'),
 	 ('Mariápolis','SP'),
 	 ('Marília','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Marinópolis','SP'),
 	 ('Martinópolis','SP'),
 	 ('Matão','SP'),
@@ -5671,7 +5671,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Miguelópolis','SP'),
 	 ('Mineiros do Tietê','SP'),
 	 ('Mira Estrela','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Miracatu','SP'),
 	 ('Mirandópolis','SP'),
 	 ('Mirante do Paranapanema','SP'),
@@ -5682,7 +5682,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Mogi-Guaçu','SP'),
 	 ('Mogi-Mirim','SP'),
 	 ('Mombuca','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Monções','SP'),
 	 ('Mongaguá','SP'),
 	 ('Monte Alegre do Sul','SP'),
@@ -5693,7 +5693,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Monte Mor','SP'),
 	 ('Monteiro Lobato','SP'),
 	 ('Morro Agudo','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Morungaba','SP'),
 	 ('Motuca','SP'),
 	 ('Murutinga do Sul','SP'),
@@ -5704,7 +5704,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Neves Paulista','SP'),
 	 ('Nhandeara','SP'),
 	 ('Nipoã','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Nova Aliança','SP'),
 	 ('Nova Campina','SP'),
 	 ('Nova Canaã Paulista','SP'),
@@ -5715,7 +5715,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Nova Independência','SP'),
 	 ('Nova Luzitânia','SP'),
 	 ('Nova Odessa','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Novais','SP'),
 	 ('Novo Horizonte','SP'),
 	 ('Nuporanga','SP'),
@@ -5726,7 +5726,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Oriente','SP'),
 	 ('Orindiúva','SP'),
 	 ('Orlândia','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Osasco','SP'),
 	 ('Oscar Bressane','SP'),
 	 ('Osvaldo Cruz','SP'),
@@ -5737,7 +5737,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Palestina','SP'),
 	 ('Palmares Paulista','SP'),
 	 ('Palmeira d''Oeste','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Palmital','SP'),
 	 ('Panorama','SP'),
 	 ('Paraguaçu Paulista','SP'),
@@ -5748,7 +5748,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Parapuã','SP'),
 	 ('Pardinho','SP'),
 	 ('Pariquera-Açu','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Parisi','SP'),
 	 ('Patrocínio Paulista','SP'),
 	 ('Paulicéia','SP'),
@@ -5759,7 +5759,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Pedra Bela','SP'),
 	 ('Pedranópolis','SP'),
 	 ('Pedregulho','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Pedreira','SP'),
 	 ('Pedrinhas Paulista','SP'),
 	 ('Pedro de Toledo','SP'),
@@ -5770,7 +5770,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Piacatu','SP'),
 	 ('Piedade','SP'),
 	 ('Pilar do Sul','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Pindamonhangaba','SP'),
 	 ('Pindorama','SP'),
 	 ('Pinhalzinho','SP'),
@@ -5781,7 +5781,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Piraju','SP'),
 	 ('Pirajuí','SP'),
 	 ('Pirangi','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Pirapora do Bom Jesus','SP'),
 	 ('Pirapozinho','SP'),
 	 ('Pirassununga','SP'),
@@ -5792,7 +5792,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Poá','SP'),
 	 ('Poloni','SP'),
 	 ('Pompéia','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Pongaí','SP'),
 	 ('Pontal','SP'),
 	 ('Pontalinda','SP'),
@@ -5803,7 +5803,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Porto Ferreira','SP'),
 	 ('Potim','SP'),
 	 ('Potirendaba','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Pracinha','SP'),
 	 ('Pradópolis','SP'),
 	 ('Praia Grande','SP'),
@@ -5814,7 +5814,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Presidente Prudente','SP'),
 	 ('Presidente Venceslau','SP'),
 	 ('Promissão','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Quadra','SP'),
 	 ('Quatá','SP'),
 	 ('Queiroz','SP'),
@@ -5825,7 +5825,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Redenção da Serra','SP'),
 	 ('Regente Feijó','SP'),
 	 ('Reginópolis','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Registro','SP'),
 	 ('Restinga','SP'),
 	 ('Ribeira','SP'),
@@ -5836,7 +5836,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Ribeirão dos Índios','SP'),
 	 ('Ribeirão Grande','SP'),
 	 ('Ribeirão Pires','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Ribeirão Preto','SP'),
 	 ('Rifaina','SP'),
 	 ('Rincão','SP'),
@@ -5847,7 +5847,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Riolândia','SP'),
 	 ('Riversul','SP'),
 	 ('Rosana','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Roseira','SP'),
 	 ('Rubiácea','SP'),
 	 ('Rubinéia','SP'),
@@ -5858,7 +5858,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Salesópolis','SP'),
 	 ('Salmourão','SP'),
 	 ('Saltinho','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Salto','SP'),
 	 ('Salto de Pirapora','SP'),
 	 ('Salto Grande','SP'),
@@ -5869,7 +5869,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Santa Branca','SP'),
 	 ('Santa Clara d''Oeste','SP'),
 	 ('Santa Cruz da Conceição','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Santa Cruz da Esperança','SP'),
 	 ('Santa Cruz das Palmeiras','SP'),
 	 ('Santa Cruz do Rio Pardo','SP'),
@@ -5880,7 +5880,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Santa Lúcia','SP'),
 	 ('Santa Maria da Serra','SP'),
 	 ('Santa Mercedes','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Santa Rita d''Oeste','SP'),
 	 ('Santa Rita do Passa Quatro','SP'),
 	 ('Santa Rosa de Viterbo','SP'),
@@ -5891,7 +5891,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Santo André','SP'),
 	 ('Santo Antônio da Alegria','SP'),
 	 ('Santo Antônio de Posse','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Santo Antônio do Aracanguá','SP'),
 	 ('Santo Antônio do Jardim','SP'),
 	 ('Santo Antônio do Pinhal','SP'),
@@ -5902,7 +5902,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('São Bernardo do Campo','SP'),
 	 ('São Caetano do Sul','SP'),
 	 ('São Carlos','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('São Francisco','SP'),
 	 ('São João da Boa Vista','SP'),
 	 ('São João das Duas Pontes','SP'),
@@ -5913,7 +5913,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('São José do Barreiro','SP'),
 	 ('São José do Rio Pardo','SP'),
 	 ('São José do Rio Preto','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('São José dos Campos','SP'),
 	 ('São Lourenço da Serra','SP'),
 	 ('São Luís do Paraitinga','SP'),
@@ -5924,7 +5924,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('São Pedro do Turvo','SP'),
 	 ('São Roque','SP'),
 	 ('São Sebastião','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('São Sebastião da Grama','SP'),
 	 ('São Simão','SP'),
 	 ('São Vicente','SP'),
@@ -5935,7 +5935,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Serra Negra','SP'),
 	 ('Serrana','SP'),
 	 ('Sertãozinho','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Sete Barras','SP'),
 	 ('Severínia','SP'),
 	 ('Silveiras','SP'),
@@ -5946,7 +5946,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Suzanápolis','SP'),
 	 ('Suzano','SP'),
 	 ('Tabapuã','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Tabatinga','SP'),
 	 ('Taboão da Serra','SP'),
 	 ('Taciba','SP'),
@@ -5957,7 +5957,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Tanabi','SP'),
 	 ('Tapiraí','SP'),
 	 ('Tapiratiba','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Taquaral','SP'),
 	 ('Taquaritinga','SP'),
 	 ('Taquarituba','SP'),
@@ -5968,7 +5968,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Taubaté','SP'),
 	 ('Tejupá','SP'),
 	 ('Teodoro Sampaio','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Terra Roxa','SP'),
 	 ('Tietê','SP'),
 	 ('Timburi','SP'),
@@ -5979,7 +5979,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Três Fronteiras','SP'),
 	 ('Tuiuti','SP'),
 	 ('Tupã','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Tupi Paulista','SP'),
 	 ('Turiúba','SP'),
 	 ('Turmalina','SP'),
@@ -5990,7 +5990,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('União Paulista','SP'),
 	 ('Urânia','SP'),
 	 ('Uru','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Urupês','SP'),
 	 ('Valentim Gentil','SP'),
 	 ('Valinhos','SP'),
@@ -6001,7 +6001,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Várzea Paulista','SP'),
 	 ('Vera Cruz','SP'),
 	 ('Vinhedo','SP');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Viradouro','SP'),
 	 ('Vista Alegre do Alto','SP'),
 	 ('Vitória Brasil','SP'),
@@ -6012,7 +6012,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Aguiarnópolis','TO'),
 	 ('Aliança do Tocantins','TO'),
 	 ('Almas','TO');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Alvorada','TO'),
 	 ('Ananás','TO'),
 	 ('Angico','TO'),
@@ -6023,7 +6023,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Araguaína','TO'),
 	 ('Araguanã','TO'),
 	 ('Araguatins','TO');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Arapoema','TO'),
 	 ('Arraias','TO'),
 	 ('Augustinópolis','TO'),
@@ -6034,7 +6034,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Barra do Ouro','TO'),
 	 ('Barrolândia','TO'),
 	 ('Bernardo Sayão','TO');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Bom Jesus do Tocantins','TO'),
 	 ('Brasilândia do Tocantins','TO'),
 	 ('Brejinho de Nazaré','TO'),
@@ -6045,7 +6045,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Carmolândia','TO'),
 	 ('Carrasco Bonito','TO'),
 	 ('Caseara','TO');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Centenário','TO'),
 	 ('Chapada da Natividade','TO'),
 	 ('Chapada de Areia','TO'),
@@ -6056,7 +6056,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Couto Magalhães','TO'),
 	 ('Cristalândia','TO'),
 	 ('Crixás do Tocantins','TO');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Darcinópolis','TO'),
 	 ('Dianópolis','TO'),
 	 ('Divinópolis do Tocantins','TO'),
@@ -6067,7 +6067,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Figueirópolis','TO'),
 	 ('Filadélfia','TO'),
 	 ('Formoso do Araguaia','TO');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Fortaleza do Tabocão','TO'),
 	 ('Goianorte','TO'),
 	 ('Goiatins','TO'),
@@ -6078,7 +6078,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Itaguatins','TO'),
 	 ('Itapiratins','TO'),
 	 ('Itaporã do Tocantins','TO');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Jaú do Tocantins','TO'),
 	 ('Juarina','TO'),
 	 ('Lagoa da Confusão','TO'),
@@ -6089,7 +6089,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Luzinópolis','TO'),
 	 ('Marianópolis do Tocantins','TO'),
 	 ('Mateiros','TO');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Maurilândia do Tocantins','TO'),
 	 ('Miracema do Tocantins','TO'),
 	 ('Miranorte','TO'),
@@ -6100,7 +6100,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Nazaré','TO'),
 	 ('Nova Olinda','TO'),
 	 ('Nova Rosalândia','TO');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Novo Acordo','TO'),
 	 ('Novo Alegre','TO'),
 	 ('Novo Jardim','TO'),
@@ -6111,7 +6111,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Palmeirópolis','TO'),
 	 ('Paraíso do Tocantins','TO'),
 	 ('Paranã','TO');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Pau d''Arco','TO'),
 	 ('Pedro Afonso','TO'),
 	 ('Peixe','TO'),
@@ -6122,7 +6122,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Ponte Alta do Bom Jesus','TO'),
 	 ('Ponte Alta do Tocantins','TO'),
 	 ('Porto Alegre do Tocantins','TO');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Porto Nacional','TO'),
 	 ('Praia Norte','TO'),
 	 ('Presidente Kennedy','TO'),
@@ -6133,7 +6133,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Rio dos Bois','TO'),
 	 ('Rio Sono','TO'),
 	 ('Sampaio','TO');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Sandolândia','TO'),
 	 ('Santa Fé do Araguaia','TO'),
 	 ('Santa Maria do Tocantins','TO'),
@@ -6144,7 +6144,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('São Bento do Tocantins','TO'),
 	 ('São Félix do Tocantins','TO'),
 	 ('São Miguel do Tocantins','TO');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('São Salvador do Tocantins','TO'),
 	 ('São Sebastião do Tocantins','TO'),
 	 ('São Valério','TO'),
@@ -6155,7 +6155,7 @@ INSERT INTO public.city (nome,state) VALUES
 	 ('Taipas do Tocantins','TO'),
 	 ('Talismã','TO'),
 	 ('Tocantínia','TO');
-INSERT INTO public.city (nome,state) VALUES
+INSERT INTO public.city (name,state) VALUES
 	 ('Tocantinópolis','TO'),
 	 ('Tupirama','TO'),
 	 ('Tupiratins','TO'),

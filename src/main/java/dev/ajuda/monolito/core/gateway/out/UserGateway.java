@@ -6,5 +6,7 @@ public interface UserGateway {
 
     UserDomain save(UserDomain userDomain);
 
-    boolean emailExist(String email);
+    UserDomain findByEmail(String email);
+
+    UserDomain findById(String userId);
 }

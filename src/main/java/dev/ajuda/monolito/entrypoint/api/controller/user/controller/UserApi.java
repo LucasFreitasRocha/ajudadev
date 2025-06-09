@@ -6,7 +6,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/user")
+@RequestMapping("/v1/user")
 public interface UserApi {
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping("/register")

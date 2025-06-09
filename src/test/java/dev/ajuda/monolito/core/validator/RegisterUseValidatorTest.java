@@ -17,14 +17,14 @@ import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
 @DisplayName("RegisterValidator Tests")
-class RegisterValidatorTest {
+class RegisterUseValidatorTest {
 
     @Mock
     HandlerErrorService handlerErrorService;
     @Mock
     UserGateway userGateway;
     @InjectMocks
-    private RegisterValidator registerValidator;
+    private RegisterUseValidator registerUseValidator;
 
     @Test
     @DisplayName("Should fall  validation errors - empty name, password and invalid email")
@@ -34,9 +34,9 @@ class RegisterValidatorTest {
                 .email("invalid-email")
                 .password("")
                 .build();
-        registerValidator.validate(register);
+        registerUseValidator.validate(register);
         verify(handlerErrorService).init();
-        verify(handlerErrorService).addFieldError(FieldsMessageError.NAME_EMPTY);
+        verify(handlerErrorService).addFieldError(FieldsMessageError.NAME_INVALID);
         verify(handlerErrorService).addFieldError(FieldsMessageError.PASSWORD_EMPTY);
         verify(handlerErrorService).addFieldError(FieldsMessageError.EMAIL_INVALID);
         verify(handlerErrorService).handle();
@@ -47,9 +47,9 @@ class RegisterValidatorTest {
     void shouldFallNullParameters() {
         var register = UserDomain.builder()
                 .build();
-        registerValidator.validate(register);
+        registerUseValidator.validate(register);
         verify(handlerErrorService).init();
-        verify(handlerErrorService).addFieldError(FieldsMessageError.NAME_EMPTY);
+        verify(handlerErrorService).addFieldError(FieldsMessageError.NAME_INVALID);
         verify(handlerErrorService).addFieldError(FieldsMessageError.PASSWORD_EMPTY);
         verify(handlerErrorService).addFieldError(FieldsMessageError.EMAIL_INVALID);
         verify(handlerErrorService).handle();
@@ -63,7 +63,7 @@ class RegisterValidatorTest {
                 .email("")
                 .password("ValidPassword123")
                 .build();
-        registerValidator.validate(register);
+        registerUseValidator.validate(register);
         verify(handlerErrorService).init();
         verify(handlerErrorService).addFieldError(FieldsMessageError.EMAIL_EMPTY);
         verify(handlerErrorService).handle();
@@ -77,7 +77,7 @@ class RegisterValidatorTest {
                 .email("teste@email.com")
                 .password("ValidPassword123")
                 .build();
-        registerValidator.validate(register);
+        registerUseValidator.validate(register);
         verify(handlerErrorService).init();
         verify(handlerErrorService, never()).addFieldError(any());
         verify(handlerErrorService).handle();

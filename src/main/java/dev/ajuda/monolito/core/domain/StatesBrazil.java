@@ -37,4 +37,12 @@ public enum StatesBrazil {
     private final String name;
 
 
+    public static StatesBrazil fromPostalAcronym(String s) {
+        for (StatesBrazil state : values()) {
+            if (state.getPostalAcronym().equalsIgnoreCase(s)) {
+                return state;
+            }
+        }
+        throw new IllegalArgumentException("Sigla não encontrada: " + s);
+    }
 }

@@ -1,16 +1,13 @@
 package dev.ajuda.monolito.dataprovider.database.gateway;
 
 import dev.ajuda.monolito.core.domain.UserDomain;
-import dev.ajuda.monolito.core.exception.service.HandlerErrorService;
 import dev.ajuda.monolito.core.gateway.out.UserGateway;
 import dev.ajuda.monolito.dataprovider.database.entity.UserEntity;
 import dev.ajuda.monolito.dataprovider.database.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import java.util.Optional;
-
-import static org.springframework.http.HttpStatus.NOT_FOUND;
+import java.util.UUID;
 
 @Service
 @RequiredArgsConstructor
@@ -25,7 +22,16 @@ public class UserGatewayImpl implements UserGateway {
     }
 
     @Override
-    public boolean emailExist(String email) {
-        return userRepository.findByEmail(email).isPresent();
+    public UserDomain findByEmail(String email) {
+        return userRepository.findByEmail(email).isPresent()
+                ? userRepository.findByEmail(email).get().toDomain()
+                : null;
+    }
+
+    @Override
+    public UserDomain findById(String userId) {
+        return userRepository.findById(UUID.fromString(userId)).isPresent()
+                ? userRepository.findById(UUID.fromString(userId)).get().toDomain()
+                : null;
     }
 }

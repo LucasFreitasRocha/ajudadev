@@ -3,7 +3,7 @@ package dev.ajuda.monolito.core.usecase;
 import dev.ajuda.monolito.core.domain.UserDomain;
 import dev.ajuda.monolito.core.exception.service.HandlerErrorService;
 import dev.ajuda.monolito.core.gateway.out.UserGateway;
-import dev.ajuda.monolito.core.validator.RegisterValidator;
+import dev.ajuda.monolito.core.validator.RegisterUseValidator;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -12,7 +12,6 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
@@ -22,7 +21,7 @@ import static org.mockito.Mockito.when;
 class RegisterUseCaseTest {
 
     @Mock
-    private RegisterValidator registerValidator;
+    private RegisterUseValidator registerUseValidator;
     @Mock
     private BCryptPasswordEncoder encryptor;
     @Mock
@@ -30,7 +29,7 @@ class RegisterUseCaseTest {
     @Mock
     private HandlerErrorService handlerErrorService;
     @InjectMocks
-    private RegisterUseCase registerUseCase;
+    private RegisterUserUseCase registerUseCase;
 
     @Test
     @DisplayName("Should register a user successfully")
@@ -42,11 +41,11 @@ class RegisterUseCaseTest {
                 .build();
 
         when(encryptor.encode(userDomain.getPassword())).thenReturn(userDomain.getPassword());
-        when(userGateway.emailExist(userDomain.getEmail())).thenReturn(false);
+        when(userGateway.findByEmail(userDomain.getEmail())).thenReturn(userDomain);
         when(userGateway.save(userDomain)).thenReturn(userDomain);
         registerUseCase.register(userDomain);
-        verify(registerValidator).validate(userDomain);
-        verify(userGateway).emailExist(userDomain.getEmail());
+        verify(registerUseValidator).validate(userDomain);
+        verify(userGateway).findByEmail(userDomain.getEmail());
         verify(encryptor).encode(userDomain.getPassword());
         verify(userGateway).save(userDomain);
     }
