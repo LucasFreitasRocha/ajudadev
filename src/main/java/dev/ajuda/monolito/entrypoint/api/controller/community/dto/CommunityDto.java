@@ -16,7 +16,7 @@ public class CommunityDto {
     private Long id;
     private String name;
     private String description;
-    private City city;
+    private CityDto city;
     private OwnerCommunityDto owner;
 
     public static CommunityDto fromDomain(CommunityDomain domain){
@@ -24,7 +24,10 @@ public class CommunityDto {
                 .id(domain.getId())
                 .name(domain.getName())
                 .description(domain.getDescription())
-                .city(domain.getCity())
+                .city(new CityDto(
+                        domain.getCity().getId(),
+                        domain.getCity().getName(),
+                        domain.getCity().getState().getPostalAcronym()))
                 .owner(new OwnerCommunityDto(domain.getOwner().getId(), domain.getOwner().getName()))
                 .build();
     }
