@@ -22,6 +22,39 @@ configurations {
 repositories {
 	mavenCentral()
 }
+sourceSets {
+	create("integrationTest") {
+		java.srcDir("src/integrationTest/java")
+		resources.srcDir("src/integrationTest/resources")
+		compileClasspath += sourceSets["main"].output + configurations["testRuntimeClasspath"]
+		runtimeClasspath += output + compileClasspath
+	}
+}
+tasks.withType<Test> {
+	useJUnitPlatform()
+}
+
+tasks.withType<ProcessResources> {
+	duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
+tasks.named<ProcessResources>("processIntegrationTestResources") {
+	duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
+tasks.register<Test>("integrationTest") {
+	description = "Executa os testes de integração"
+	group = "verification"
+
+	testClassesDirs = sourceSets["integrationTest"].output.classesDirs
+	classpath = sourceSets["integrationTest"].runtimeClasspath
+
+	useJUnitPlatform() // necessário para JUnit 5
+	shouldRunAfter("test")
+}
+tasks.named("check") {
+	dependsOn("integrationTest")
+}
 
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-web")
@@ -35,8 +68,12 @@ dependencies {
 	annotationProcessor("org.projectlombok:lombok")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+
+	"integrationTestImplementation"("org.testcontainers:testcontainers")
+	"integrationTestImplementation"("org.testcontainers:junit-jupiter")
+	"integrationTestImplementation"("org.testcontainers:postgresql")
+
 }
 
-tasks.withType<Test> {
-	useJUnitPlatform()
-}
+
+

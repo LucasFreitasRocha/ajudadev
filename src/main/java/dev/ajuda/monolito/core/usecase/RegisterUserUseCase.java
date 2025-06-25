@@ -24,7 +24,7 @@ public class RegisterUserUseCase implements RegisterUserGateway {
     public UserDomain register(UserDomain register) {
         registerUseValidator.validate(register);
         if(Objects.nonNull(userGateway.findByEmail(register.getEmail()))) {
-            handlerErrorService.addFieldError(FieldsMessageError.EMAIL_EXISTS).handle();
+            handlerErrorService.init().addFieldError(FieldsMessageError.EMAIL_EXISTS).handle();
         }
         register.setPassword(encryptor.encode(register.getPassword()));
         return userGateway.save(register);

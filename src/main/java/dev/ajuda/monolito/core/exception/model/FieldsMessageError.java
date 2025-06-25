@@ -15,7 +15,8 @@ public enum FieldsMessageError {
     CITY_INVALID("city", "City is not valid"),
     OWNER_INVALID("owner", "Owner is not valid"),
     USER_NOT_FOUND("user", "user not found" ),
-    CITY_NOT_FOUND("city", "City is not found");
+    CITY_NOT_FOUND("city", "City is not found"),
+    PAGE_IS_REQUIRED("page" , "Page is required" );
 
     private final String field;
     private final String message;

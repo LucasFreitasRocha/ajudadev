@@ -2,6 +2,7 @@ package dev.ajuda.monolito.core.usecase;
 
 import dev.ajuda.monolito.core.domain.City;
 import dev.ajuda.monolito.core.domain.CommunityDomain;
+import dev.ajuda.monolito.core.domain.PageableCommunity;
 import dev.ajuda.monolito.core.domain.UserDomain;
 import dev.ajuda.monolito.core.exception.model.FieldsMessageError;
 import dev.ajuda.monolito.core.exception.service.HandlerErrorService;
@@ -36,14 +37,18 @@ public class RegisterCommunityUseCase implements RegisterCommunityGateway {
     }
 
     @Override
-    public List<CommunityDomain> getAllCommunities() {
-        return communityDatabaseGateway.getAllCommunities();
+    public PageableCommunity getAllCommunities(Integer page, int size, Long cityId) {
+       if(Objects.isNull(page)) {
+            handlerErrorService.addFieldError(FieldsMessageError.PAGE_IS_REQUIRED)
+                    .addHttpStatus(HttpStatus.NOT_FOUND).handle();
+        }
+        return communityDatabaseGateway.getAllCommunities(page, size, cityId);
     }
 
     private City getCity(Long id) {
         var city = cityGateway.findById(id);
         if(Objects.isNull(city)) {
-            handlerErrorService.addFieldError(FieldsMessageError.CITY_NOT_FOUND)
+            handlerErrorService.init().addFieldError(FieldsMessageError.CITY_NOT_FOUND)
                     .addHttpStatus(HttpStatus.NOT_FOUND).handle();
         }
         return city;
@@ -52,7 +57,7 @@ public class RegisterCommunityUseCase implements RegisterCommunityGateway {
     private UserDomain getUser(String ownerId) {
         var user = userGateway.findById(ownerId);
         if (Objects.isNull(user)) {
-            handlerErrorService.addFieldError(FieldsMessageError.USER_NOT_FOUND)
+            handlerErrorService.init().addFieldError(FieldsMessageError.USER_NOT_FOUND)
                     .addHttpStatus(HttpStatus.NOT_FOUND).handle();
         }
         return user;

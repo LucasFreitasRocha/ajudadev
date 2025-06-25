@@ -16,7 +16,7 @@ import static org.mockito.Mockito.*;
 
 
 @ExtendWith(MockitoExtension.class)
-@DisplayName("RegisterValidator Tests")
+@DisplayName("RegisterUseValidator Tests")
 class RegisterUseValidatorTest {
 
     @Mock
