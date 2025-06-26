@@ -4,11 +4,9 @@ package dev.ajuda.monolito.core.validator;
 import dev.ajuda.monolito.core.domain.UserDomain;
 import dev.ajuda.monolito.core.exception.model.FieldsMessageError;
 import dev.ajuda.monolito.core.exception.service.HandlerErrorService;
-import dev.ajuda.monolito.core.gateway.out.UserGateway;
 import lombok.RequiredArgsConstructor;
-
-import org.springframework.stereotype.Component;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.stereotype.Component;
 
 
 @Component
@@ -26,7 +24,7 @@ public class RegisterUseValidator {
         if (StringUtils.isEmpty(register.getEmail())) {
             handlerErrorService.addFieldError(FieldsMessageError.EMAIL_EMPTY);
         }
-        if(!EmailValidator.isValid(register.getEmail())){
+        if (!EmailValidator.isValid(register.getEmail())) {
             handlerErrorService.addFieldError(FieldsMessageError.EMAIL_INVALID);
         }
         handlerErrorService.handle();

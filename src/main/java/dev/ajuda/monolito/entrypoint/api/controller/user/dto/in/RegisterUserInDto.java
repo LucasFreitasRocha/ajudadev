@@ -5,6 +5,8 @@ import dev.ajuda.monolito.core.domain.UserDomain;
 import lombok.Builder;
 
 import java.util.List;
+import java.util.Objects;
+
 @Builder
 public record RegisterUserInDto(String name,
                                 String email,
@@ -16,7 +18,7 @@ public record RegisterUserInDto(String name,
                 .name(name)
                 .email(email)
                 .password(password)
-                .typeUser(typeUsers)
+                .typeUser(Objects.nonNull(typeUsers) ? typeUsers : List.of(TypeUser.MENTORED))
                 .build();
     }
 }

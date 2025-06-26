@@ -4,10 +4,7 @@ import dev.ajuda.monolito.core.domain.TypeUser;
 import dev.ajuda.monolito.core.domain.UserDomain;
 import dev.ajuda.monolito.core.util.uuid.GeneratedUuidV7;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
+import lombok.*;
 
 import java.util.List;
 import java.util.Objects;
@@ -17,6 +14,7 @@ import java.util.UUID;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
+@Getter
 @Table(name = "users")
 public class UserEntity {
     @Id

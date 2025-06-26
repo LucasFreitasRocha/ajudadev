@@ -1,48 +1,22 @@
 package dev.ajuda.monolito.controller;
 
-import dev.ajuda.monolito.MonolitoApplication;
-import dev.ajuda.monolito.dataprovider.database.repository.UserRepository;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
+import dev.ajuda.monolito.BaseApiTest;
+import dev.ajuda.monolito.dataprovider.database.entity.UserEntity;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.junit.jupiter.MockitoExtension;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
-import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.test.web.servlet.setup.MockMvcBuilders;
-import org.springframework.web.context.WebApplicationContext;
 
-
-import static org.mockito.ArgumentMatchers.anyString;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-@SpringBootTest(classes = MonolitoApplication.class)
-@ExtendWith(MockitoExtension.class)
-public class UserApiTestIntegration {
 
-    @Autowired
-    WebApplicationContext webApplicationContext;
+@DisplayName("UserApi Integration Tests")
+public class UserApiTestIntegration extends BaseApiTest {
 
-    @Autowired
-    UserRepository userRepository;
-
-    MockMvc mockMvc;
-
-    @BeforeEach
-    void setUp() {
-        mockMvc = MockMvcBuilders.webAppContextSetup(webApplicationContext).build();
-    }
-
-    @AfterEach
-    void setDown() {
-        userRepository.deleteAll();
-    }
 
     @Test
+    @DisplayName("Should register user successfully")
     void shouldRegisterUserSuccessfully() throws Exception {
         mockMvc.perform(post("/v1/user/register")
                         .content("""
@@ -64,4 +38,63 @@ public class UserApiTestIntegration {
                 .andExpect(jsonPath("$.typeUsers[0]").value("MENTOR"));
     }
 
+
+    @Test
+    @DisplayName("Should fail to register because email already exists")
+    void shouldReturn400BecauseEmailAlreadyExists() throws Exception {
+        userRepository.save(
+                UserEntity.builder()
+                        .name("test user")
+                        .email("email@email.com")
+                        .password("1234")
+                        .build());
+        mockMvc.perform(post("/v1/user/register")
+                        .content("""
+                                {
+                                   "name": "test user",
+                                   "email": "email@email.com",
+                                   "password": "1234",
+                                   "typeUsers": [
+                                     "MENTOR"
+                                   ]
+                                 }
+                                """)
+                        .contentType(MediaType.APPLICATION_JSON)
+                )
+                .andExpect(status().is4xxClientError())
+                .andExpect(jsonPath("$.status").value("BAD_REQUEST"))
+                .andExpect(jsonPath("$.path").value("/v1/user/register"))
+                .andExpect(jsonPath("$.date").exists())
+                .andExpect(jsonPath("$.errors[?(@.field=='email')].message")
+                        .value("Email already exists"));
+    }
+
+    @Test
+    @DisplayName("Should return 400 when fields is invalid")
+    void shouldReturn400WhenFieldsIsInvalid() throws Exception {
+        mockMvc.perform(post("/v1/user/register")
+                        .content("""
+                                {
+                                   "name": "",
+                                   "email": "",
+                                   "password": "",
+                                   "typeUsers": [
+                                     "MENTOR"
+                                   ]
+                                 }
+                                """)
+                        .contentType(MediaType.APPLICATION_JSON)
+                )
+                .andExpect(status().is4xxClientError())
+                .andExpect(jsonPath("$.status").value("BAD_REQUEST"))
+                .andExpect(jsonPath("$.path").value("/v1/user/register"))
+                .andExpect(jsonPath("$.date").exists())
+                .andExpect(jsonPath("$.errors[?(@.field=='name')].message").value("Name is not valid"))
+                .andExpect(jsonPath("$.errors[?(@.field=='password')].message").value("Password cannot be empty"))
+                .andExpect(jsonPath("$.errors[?(@.field=='email')].message", org.hamcrest.Matchers.containsInAnyOrder(
+                        "Email cannot be empty",
+                        "Email is not valid"
+                )));
+
+    }
 }

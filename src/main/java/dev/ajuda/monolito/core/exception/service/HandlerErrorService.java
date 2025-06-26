@@ -8,17 +8,13 @@ import dev.ajuda.monolito.core.exception.model.HandlerErrorModel;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
-import java.util.Objects;
-
 @Service
 public class HandlerErrorService {
 
     private HandlerErrorModel handlerErrorModel;
 
     public HandlerErrorService init() {
-        if(Objects.isNull(handlerErrorModel)) {
-            handlerErrorModel = new HandlerErrorModel();
-        }
+        handlerErrorModel = new HandlerErrorModel();
         return this;
     }
 
